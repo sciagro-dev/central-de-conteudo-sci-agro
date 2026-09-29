@@ -1,0 +1,927 @@
+<title>Central de Conteúdo SCI-AGRO</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+[hidden]{display:none!important}
+:root{color-scheme:light;
+  --ground:#FFFFFF;--card:#FFFFFF;--sunk:#F2F6FA;--ink:#08243A;--soft:#4A6476;--faint:#7A93A6;
+  --blue:#0054A6;--blue-2:#1268BF;--on-blue:#FFFFFF;--lime:#8CC63F;--limet:#4F7F2B;--line:#DCE7F0;
+  --hero1:#062A43;--hero2:#04202F;
+  --s-pauta:#7A93A6;--s-producao:#1D6FD1;--s-revisao:#DB2777;--s-final:#CA8A04;--s-ajustes:#9333EA;--s-pronto:#16A34A;--s-publicado:#0891B2;
+  --ok:#15803D;--ok-bg2:#E7F5EC;--at:#B45309;--at-bg:#FEF3E2;--late:#B91C1C;--late-bg:#FDECEC;
+  --warn-bg:#FFF6E0;--warn-line:#E0A21B;--warn-ink:#6B4700;--ok-bg:#E3F3D3;--ok-ink:#2E6B12;--bad-bg:#FDECEC;--bad-ink:#9B1C1C;
+  --shadow:0 1px 2px rgba(6,42,67,.06);
+  --ff:"Figtree","Segoe UI",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html,body{background:var(--ground)}
+body{color:var(--ink);font-family:var(--ff);font-size:15px;line-height:1.5;margin:0;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:var(--blue)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.pad{max-width:1320px;margin:0 auto;padding-inline:20px}
+@media (max-width:640px){.pad{padding-inline:16px}}
+
+/* topo */
+.top{background:#FFFFFF;color:var(--ink);padding-block:22px 0;border-bottom:1px solid var(--line)}
+.top__row{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-content:space-between}
+.eye{display:flex;gap:10px;align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+.eye i{width:26px;height:2px;background:var(--lime)}
+.top h1{color:var(--hero1);margin:8px 0 0;font-size:clamp(26px,4vw,38px);font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.me{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--soft)}
+.me img{width:28px;height:28px;border-radius:50%}
+.tabs{display:flex;gap:2px;margin-top:18px;overflow-x:auto;scrollbar-width:none}
+.tabs button{background:none;border:0;color:var(--soft);padding:10px 14px;font-weight:600;font-size:14px;border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--hero1);border-bottom-color:var(--lime)}
+.tabs button:hover{color:var(--hero1)}
+
+/* barra */
+.bar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;padding-block:16px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--soft);border-radius:99px;padding:5px 13px;font-size:13px;font-weight:600;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:var(--on-blue)}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:7px;padding:7px 13px;font-size:13.5px;font-weight:600;cursor:pointer}
+.btn:hover{border-color:var(--blue)}
+.btn--pri{background:var(--blue);border-color:var(--blue);color:var(--on-blue)}
+.btn--ok{background:var(--ok);border-color:var(--ok);color:#fff}
+.btn--bad{color:var(--bad-ink);border-color:var(--bad-ink);background:transparent}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.stat{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--soft)}
+.stat b{font-family:var(--mono);color:var(--ink)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:1px}
+
+/* quadro */
+.board{display:grid;grid-template-columns:repeat(7,minmax(210px,1fr));gap:10px;overflow-x:auto;padding-bottom:14px}
+.col{background:var(--sunk);border-radius:10px;padding:8px;min-height:180px}
+.col h3{display:flex;justify-content:space-between;align-items:center;margin:2px 4px 8px;font-size:12px;font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--soft);font-weight:500}
+.col h3 span{font-family:var(--mono);background:var(--card);border-radius:99px;padding:1px 8px;color:var(--ink)}
+.cards{display:grid;gap:7px}
+.card{display:block;width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--st);border-radius:8px;padding:9px 10px;cursor:pointer;box-shadow:var(--shadow)}
+.card:hover{border-color:var(--blue);border-left-color:var(--st)}
+.card__top{display:flex;justify-content:space-between;gap:6px;font-family:var(--mono);font-size:11px;color:var(--faint)}
+.card__t{font-weight:700;font-size:13.5px;line-height:1.3;margin:4px 0 5px}
+.card__m{display:flex;flex-wrap:wrap;gap:4px}
+.tag{font-family:var(--mono);font-size:10.5px;background:var(--sunk);color:var(--soft);border-radius:4px;padding:1px 6px}
+.tag--v{background:var(--warn-bg);color:var(--warn-ink)}
+.tag--ok{background:var(--ok-bg);color:var(--ok-ink)}
+.tag--area{background:transparent;border:1px solid var(--limet);color:var(--limet)}
+.card__img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:5px;margin-top:7px;background:var(--sunk);display:block;max-height:120px}
+.hint{margin:0 0 10px;font-size:13px;color:var(--soft)}
+body.can-drag .card,body.can-drag .ev{cursor:grab}
+.is-dragging{opacity:.35}
+.ghost{position:fixed;left:0;top:0;z-index:60;pointer-events:none;width:210px;transform:rotate(2deg);box-shadow:0 12px 30px rgba(6,42,67,.25)!important;opacity:.95}
+.drop{outline:2px dashed var(--blue);outline-offset:-3px;background:#E8F1FB!important}
+body.dragging-now{cursor:grabbing;user-select:none}
+.sla{display:inline-flex;align-items:center;gap:5px;margin-top:7px;font-size:11.5px;font-weight:600;border-radius:5px;padding:2px 7px;line-height:1.35}
+.sla i{font-style:normal;font-size:10px}
+.sla--ok{background:var(--ok-bg2);color:var(--ok)}.sla--warn{background:var(--at-bg);color:var(--at)}.sla--late{background:var(--late-bg);color:var(--late)}.sla--done{background:var(--sunk);color:var(--soft)}
+.pg{display:grid;gap:18px;padding-bottom:40px}
+.pg h2{font-size:18px;margin:0 0 10px;letter-spacing:-.01em}
+.pg .box{padding:16px 18px}
+.thermo__t{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 16px}
+.thermo__big{font-size:30px;font-weight:800;letter-spacing:-.02em;color:var(--hero1)}
+.thermo__big span{font-size:15px;font-weight:600;color:var(--soft);margin-left:4px}
+.stack{display:flex;gap:2px;height:14px;margin:12px 0 10px}
+.stack i{display:block;height:100%;border-radius:0}
+.stack i:first-child{border-radius:4px 0 0 4px}.stack i:last-child{border-radius:0 4px 4px 0}.stack i:only-child{border-radius:4px}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--soft)}
+.legend b{color:var(--ink);font-family:var(--mono);font-weight:500}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
+@media (max-width:700px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tile{border:1px solid var(--line);border-radius:9px;padding:10px 12px}
+.tile b{display:block;font-size:24px;font-weight:800;font-variant-numeric:tabular-nums}
+.tile span{font-size:12.5px;color:var(--soft)}
+.tile--late b{color:var(--late)}.tile--warn b{color:var(--at)}.tile--ok b{color:var(--ok)}.tile--pub b{color:var(--s-publicado)}
+.cols2{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:900px){.cols2{grid-template-columns:1fr}}
+.q h3{font-size:13px;font-family:var(--mono);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);margin:14px 0 6px;display:flex;align-items:center;gap:6px}
+.q h3:first-of-type{margin-top:0}
+.qi{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:10px;align-items:center;width:100%;text-align:left;border:1px solid var(--line);background:var(--card);border-radius:8px;padding:8px 10px;margin-bottom:6px;cursor:pointer;font-size:13.5px;color:var(--ink)}
+.qi:hover{border-color:var(--blue)}
+.qi .dt{font-family:var(--mono);font-size:12px;color:var(--soft)}
+.qi .sub2{display:block;font-size:12px;color:var(--soft);margin-top:2px;white-space:normal}
+.qi .sla{margin-top:0}
+.none2{font-size:13px;color:var(--faint);margin:0 0 6px}
+.bars2{display:grid;gap:8px}
+.bar2{display:grid;grid-template-columns:180px minmax(0,1fr) 28px;gap:10px;align-items:center;font-size:13px}
+.bar2__track{background:var(--sunk);height:12px;border-radius:0 4px 4px 0}
+.bar2__fill{height:100%;background:var(--blue);border-radius:0 4px 4px 0;min-width:2px}
+.bar2 b{font-family:var(--mono);font-weight:500;text-align:right}
+.facts{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:14px;font-size:13px;color:var(--soft)}
+.facts b{color:var(--ink)}
+.tag--q{background:#E8EFF8;color:#0B4EA2;font-weight:500}
+.qd__hd{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 14px}
+.qd__hd h2{margin:0}
+.qd__lead{margin:6px 0 12px;font-size:15.5px;color:var(--ink);max-width:70ch}
+.qd__kv{grid-template-columns:110px minmax(0,1fr);margin-bottom:14px}
+.qd__posts{display:grid;gap:10px}
+.qd__post{border:1px solid var(--line);border-radius:9px;padding:10px 14px}
+.qd__t{display:grid;grid-template-columns:78px minmax(0,1fr) auto;gap:10px;align-items:center;width:100%;background:none;border:0;padding:0;text-align:left;cursor:pointer;color:var(--ink);font-size:15px}
+.qd__t:hover b{color:var(--blue)}
+.qd__t .dt{font-family:var(--mono);font-size:12px;color:var(--soft)}
+.qd__meta{margin:4px 0 0 88px;font-size:12.5px;color:var(--faint)}
+.qd__pts{margin:8px 0 2px 88px;padding-left:18px;font-size:14px;color:var(--soft);display:grid;gap:3px}
+@media (max-width:640px){.qd__t{grid-template-columns:1fr}.qd__meta,.qd__pts{margin-left:0}}
+.tabcount{display:inline-flex;min-width:20px;height:20px;padding:0 6px;border-radius:99px;background:var(--s-final);color:#fff;font-size:11.5px;font-weight:700;align-items:center;justify-content:center;margin-left:4px;vertical-align:1px}
+.ap{display:grid;grid-template-columns:300px minmax(0,1fr);gap:18px;align-items:start;padding-bottom:40px}
+@media (max-width:900px){.ap{grid-template-columns:1fr}}
+.ap__seg{display:flex;gap:4px;background:var(--sunk);padding:4px;border-radius:9px;margin-bottom:10px}
+.ap__seg button{flex:1;border:0;background:transparent;border-radius:7px;padding:8px 6px;font-weight:600;font-size:13px;cursor:pointer;color:var(--soft)}
+.ap__seg button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:var(--shadow)}
+.ap__list{display:grid;gap:6px}
+.ap__item{display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;align-items:start;border:1px solid var(--line);border-radius:8px;padding:9px 10px;background:#fff;cursor:pointer;font-size:13.5px}
+.ap__item[aria-current="true"]{border-color:var(--blue);box-shadow:0 0 0 2px rgba(29,111,209,.18)}
+.ap__item input{margin-top:2px;width:16px;height:16px}
+.ap__item .d{font-family:var(--mono);font-size:11.5px;color:var(--soft)}
+.ap__batch{margin-top:12px;display:grid;gap:8px}
+.ap__main{display:grid;gap:14px}
+.ap__head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline}
+.ap__head h2{margin:0;font-size:22px;letter-spacing:-.01em}
+.ap__nav{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--soft)}
+.viewer{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.viewer__stage{position:relative;background:#F2F5F8;border-radius:10px;display:flex;align-items:center;justify-content:center;min-height:320px;overflow:hidden}
+.viewer__stage img,.viewer__stage video{max-width:100%;max-height:640px;display:block}
+.viewer__arrow{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.92);font-size:20px;cursor:pointer}
+.viewer__arrow.l{left:10px}.viewer__arrow.r{right:10px}
+.thumbs{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.thumb{position:relative;flex:none;width:64px;height:80px;border-radius:6px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:var(--sunk)}
+.thumb[aria-current="true"]{border-color:var(--blue)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb b{position:absolute;right:3px;top:3px;background:var(--s-ajustes);color:#fff;font-size:10px;border-radius:99px;min-width:16px;height:16px;display:flex;align-items:center;justify-content:center}
+.caps2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:760px){.caps2{grid-template-columns:1fr}}
+.caps2 .cap{max-height:260px;overflow:auto}
+.cap{white-space:pre-wrap;font-size:14px;background:var(--sunk);border-radius:8px;padding:12px 14px}
+.check{display:grid;gap:8px;margin:4px 0 12px}
+.check label{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;cursor:pointer}
+.check input{width:18px;height:18px;margin-top:1px;flex:none}
+.bigbtns{display:grid;grid-template-columns:1fr 1fr auto;gap:8px}
+@media (max-width:560px){.bigbtns{grid-template-columns:1fr}}
+.bigbtns .btn{justify-content:center;padding:12px 16px;font-size:15px}
+.cmts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.cmts li{font-size:13.5px;border-left:3px solid var(--line);padding-left:10px}
+.cmts .alvo{font-family:var(--mono);font-size:11px;background:var(--sunk);border-radius:4px;padding:1px 6px;margin-right:6px;color:var(--soft)}
+.cmts .who2{font-weight:700}
+.done{padding:40px 20px;text-align:center;color:var(--soft)}
+.done b{display:block;font-size:22px;color:var(--ink);margin-bottom:6px}
+.empty{font-size:12.5px;color:var(--faint);padding:8px 4px}
+
+/* calendário */
+.cal-month{margin-bottom:26px}
+.cal-month h2{font-size:20px;margin:0 0 10px}
+.cal{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.cal .dow{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--faint);text-transform:uppercase;padding-left:4px}
+.day{min-height:92px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 7px}
+.day.off{background:transparent;border-style:dashed;opacity:.45}
+.day .d{font-family:var(--mono);font-size:11px;color:var(--faint)}
+.ev{display:block;width:100%;text-align:left;margin-top:5px;border:0;border-left:3px solid var(--st);background:var(--sunk);border-radius:5px;padding:4px 6px;font-size:11.5px;font-weight:600;line-height:1.3;cursor:pointer;color:var(--ink)}
+@media (max-width:700px){.cal{grid-template-columns:1fr}.cal .dow,.day.off,.day.none{display:none}.day{min-height:0}}
+
+/* lista */
+.tblwrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:860px;font-size:13.5px}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);text-align:left;font-weight:500;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--sunk)}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+tbody tr{cursor:pointer}tbody tr:hover td{background:var(--sunk)}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;white-space:nowrap}
+
+/* painel */
+dialog{border:0;padding:0;margin:0 0 0 auto;height:100%;max-height:100%;width:min(760px,100%);background:#F7F9FB;color:var(--ink);box-shadow:-20px 0 60px rgba(0,0,0,.25)}
+dialog::backdrop{background:rgba(4,32,47,.45)}
+.pn__hd{position:sticky;top:0;z-index:2;background:var(--card);border-bottom:1px solid var(--line);padding:16px 20px 12px}
+.pn__x{position:absolute;right:14px;top:12px;border:0;background:var(--sunk);border-radius:6px;width:32px;height:32px;cursor:pointer;font-size:18px;line-height:1}
+.pn__meta{font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.04em;padding-right:40px}
+.pn__t{margin:4px 0 8px;font-size:22px;line-height:1.2;letter-spacing:-.01em;padding-right:40px;text-wrap:balance}
+.steps{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.step{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:99px;background:var(--sunk);color:var(--faint)}
+.step.done{background:var(--ok-bg);color:var(--ok-ink)}
+.step.now{background:var(--st);color:#fff}
+.pn__bd{padding:16px 20px 60px;display:grid;gap:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.box h4{margin:0 0 10px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);font-weight:500}
+.act{border:2px solid var(--st);}
+.act p{margin:0 0 10px;color:var(--soft);font-size:14px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+textarea,input[type=text],input[type=url],input[type=datetime-local],select{width:100%;border:1px solid var(--line);border-radius:7px;background:var(--ground);padding:8px 10px;font-size:14px}
+textarea{min-height:90px;resize:vertical;line-height:1.5}
+label.l{display:block;font-size:12.5px;font-weight:600;color:var(--soft);margin:10px 0 4px}
+.warn{background:var(--warn-bg);border:1px solid var(--warn-line);color:var(--warn-ink);border-radius:8px;padding:10px 12px;font-size:13.5px}
+.bad{background:var(--bad-bg);border:1px solid var(--bad-ink);color:var(--bad-ink);border-radius:8px;padding:10px 12px;font-size:13.5px}
+.bad b,.warn b{color:inherit}
+.brief ol{margin:0;padding-left:20px}.brief li{margin-bottom:4px}
+.pre{white-space:pre-wrap;font-size:14px}
+.kv{display:grid;grid-template-columns:130px minmax(0,1fr);gap:4px 12px;font-size:13.5px}
+.kv dt{color:var(--faint)}.kv dd{margin:0}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.art{background:var(--sunk);border-radius:8px;overflow:hidden;font-size:12px}
+.art img,.art video{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#000}
+.art .pdf{aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:22px;color:var(--faint)}
+.art__m{padding:6px 8px;display:flex;justify-content:space-between;gap:6px}
+.art__m a{font-weight:600}
+.hist{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.hist li{display:grid;grid-template-columns:26px minmax(0,1fr);gap:8px;font-size:13.5px}
+.hist img{width:26px;height:26px;border-radius:50%}
+.hist .who{font-weight:700}.hist .when{font-family:var(--mono);font-size:11px;color:var(--faint);margin-left:6px}
+.hist .txt{white-space:pre-wrap;color:var(--soft)}
+.hist .a{font-weight:600;color:var(--ink)}
+.sys{width:26px;height:26px;border-radius:50%;background:var(--sunk);display:flex;align-items:center;justify-content:center;font-size:12px}
+.capwrap{position:relative}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--ground);padding:9px 16px;border-radius:8px;font-size:14px;font-weight:600;z-index:10;box-shadow:var(--shadow)}
+.status{padding:40px 0;color:var(--soft);font-size:15px}
+
+/* ideias e guia */
+.two{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+.idea{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;gap:6px}
+.idea__h{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:12.5px;color:var(--faint)}
+.ins{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px}
+.ins article{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.ins h3{margin:0 0 6px;font-size:16px}
+.ins p{margin:0;color:var(--soft);font-size:14px}
+.sec h2{font-size:22px;margin:28px 0 6px}.sec .sub{color:var(--soft);margin:0 0 14px;max-width:70ch}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px}
+.flow div{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--st);border-radius:8px;padding:10px 12px;font-size:13.5px}
+.flow b{display:block;margin-bottom:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<header class="top">
+  <div class="pad">
+    <div class="top__row">
+      <div>
+        <div class="eye"><i></i>SCI-AGRO · Instagram + LinkedIn · Out–Dez 2026</div>
+        <h1>Central de Conteúdo</h1>
+      </div>
+      <div class="me" id="me"></div>
+    </div>
+    <nav class="tabs" role="tablist" id="tabs">
+      <button role="tab" data-v="painel" aria-selected="true">Painel</button>
+      <button role="tab" data-v="aprovar" aria-selected="false">Aprovações <span id="apcount" class="tabcount" hidden></span></button>
+      <button role="tab" data-v="quadro" aria-selected="false">Fluxo</button>
+      <button role="tab" data-v="quadros" aria-selected="false">Quadros</button>
+      <button role="tab" data-v="calendario" aria-selected="false">Calendário</button>
+      <button role="tab" data-v="lista" aria-selected="false">Lista</button>
+      <button role="tab" data-v="ideias" aria-selected="false">Pautas das áreas</button>
+      <button role="tab" data-v="guia" aria-selected="false">Guia e insights</button>
+    </nav>
+  </div>
+</header>
+
+<main class="pad">
+  <div class="bar" id="bar">
+    <div class="row" style="gap:10px 14px"><div class="chips" id="months"></div><label class="stat" for="fq" style="display:flex;align-items:center;gap:8px">Quadro <select id="fq" style="width:auto;padding:6px 10px;font-size:13.5px"></select></label></div>
+    <div class="stat" id="stat"></div>
+  </div>
+  <div id="view"><p class="status">Carregando a central…</p></div>
+</main>
+
+<dialog id="panel" aria-labelledby="pn-title"></dialog>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const STAGES=[
+ {k:'pauta',n:'Pauta',c:'var(--s-pauta)'},
+ {k:'producao',n:'Em produção',c:'var(--s-producao)'},
+ {k:'revisao',n:'Revisão técnica',c:'var(--s-revisao)'},
+ {k:'final',n:'Aprovação final',c:'var(--s-final)'},
+ {k:'ajustes',n:'Ajustes pedidos',c:'var(--s-ajustes)'},
+ {k:'pronto',n:'Pronto p/ publicar',c:'var(--s-pronto)'},
+ {k:'publicado',n:'Publicado',c:'var(--s-publicado)'}];
+const SMAP=Object.fromEntries(STAGES.map(s=>[s.k,s]));
+const MONTHS=[['all','Trimestre'],['2026-10','Outubro'],['2026-11','Novembro'],['2026-12','Dezembro']];
+const AREAS_LIST=['Comercial','Diretoria','Ecotoxicologia','Entomologia','Físico-Química','Garantia da Qualidade','Genotoxicidade','Microbiologia','Padrões Analíticos / 5-batch','PMO','Resíduos de Pesticidas','Toxicologia in vitro','Toxicologia in vivo','RH','Financeiro','Compras','Almoxarifado','Recepção','TI','Outra'];
+const DOC_URL='__DOC__';
+const AREAS=__AREAS__;
+const INSIGHTS=__INSIGHTS__;
+const EXTRAS=__EXTRAS__;
+
+const S={quadro:'all',posts:[],ideias:[],month:'2026-10',view:(()=>{try{return localStorage.getItem('sci-central-view')||'painel'}catch(_){return 'painel'}})(),open:null,me:null,uid:null,canWrite:true,canAssets:false,db:null,assets:null,user:null,downloads:null,loaded:false,dbFail:false};
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function toast(t){const e=$('#toast');e.textContent=t;e.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>e.hidden=true,2400)}
+const fmtD=iso=>{const [y,m,d]=iso.split('-');return d+'/'+m};
+const fmtT=iso=>{try{const d=new Date(iso);return d.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'})+' '+d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})}catch(_){return ''}};
+const inMonth=p=>(S.month==='all'||p.data.startsWith(S.month))&&(S.quadro==='all'||p.quadro===S.quadro);
+
+/* ---------- pessoas ---------- */
+let PROF={};
+async function resolve(ids){
+  ids=[...new Set(ids.filter(Boolean))];
+  if(!S.user||!ids.length) return;
+  try{const r=await S.user.profiles(ids);PROF={...PROF,...r}}catch(_){}
+}
+function who(e){
+  if(e.by&&PROF[e.by]){const p=PROF[e.by];if(p.isMe)return {name:'Você',img:p.avatarUrl};if(p.name)return {name:p.name,img:p.avatarUrl};return {name:e.quem||'Alguém',img:p.avatarUrl}}
+  return {name:e.quem||'Alguém',img:null};
+}
+
+/* ---------- boot ---------- */
+(async()=>{
+  const c=window.claude;
+  if(!c||!c.use){fail();return}
+  const [db,user,assets,downloads]=await Promise.all([c.use('db'),c.use('user'),c.use('assets'),c.use('downloads')]);
+  S.db=db;S.user=user;S.assets=assets;S.downloads=downloads;S.canAssets=!!assets;
+  if(user){
+    try{S.me=await user.me();S.uid=S.me.id}catch(_){}
+    try{const w=await user.can('data.write');S.canWrite=w!==false}catch(_){}
+    document.body.classList.toggle('can-drag',S.canWrite);
+    const m=$('#me');
+    if(S.me){m.innerHTML='';const img=document.createElement('img');img.src=S.me.avatarUrl;img.alt='';m.append(img);
+      if(S.me.name){const sp=document.createElement('span');sp.textContent=S.me.name+(S.canWrite?'':' · só leitura');m.append(sp)}
+      else{const lb=document.createElement('label');lb.htmlFor='f-nome';lb.textContent='Seu nome:';const inp=document.createElement('input');inp.type='text';inp.id='f-nome';inp.placeholder='Para assinar aprovações';inp.value=nomeLocal();inp.style.width='190px';
+        inp.addEventListener('change',()=>{try{localStorage.setItem('sci-central-nome',inp.value.trim())}catch(_){};toast('Nome salvo neste navegador')});m.append(lb,inp)}}
+  }
+  document.body.classList.toggle('can-drag',S.canWrite);
+  if(!db){fail();return}
+  db.collection('posts').orderBy('data').onSnapshot(snap=>{
+    S.posts=snap.docs.map(d=>({_id:d.id,...d.data()}));S.loaded=true;
+    resolve(S.posts.flatMap(p=>(p.historico||[]).map(h=>h.by)).concat(S.posts.flatMap(p=>(p.artes||[]).map(a=>a.by)))).then(render);
+    render();
+  },e=>{S.dbFail=true;render()});
+  db.collection('ideias').orderBy('at','desc').onSnapshot(snap=>{
+    S.ideias=snap.docs.map(d=>({_id:d.id,...d.data()}));
+    resolve(S.ideias.map(i=>i.by)).then(()=>{if(S.view==='ideias')render()});
+    if(S.view==='ideias')render();
+  },()=>{});
+})();
+function fail(){S.dbFail=true;render()}
+
+/* ---------- navegação ---------- */
+$('#tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;S.view=b.dataset.v;try{localStorage.setItem('sci-central-view',S.view)}catch(_){}
+  document.querySelectorAll('#tabs button').forEach(x=>x.setAttribute('aria-selected',x===b));render()});
+function renderMonths(){
+  const m=$('#months');
+  m.innerHTML=MONTHS.map(([k,n])=>`<button class="chip" data-m="${k}" aria-pressed="${S.month===k}">${n}</button>`).join('');
+  const f=$('#fq');const opts='<option value="all">Todos</option>'+QUADROS.map(q=>`<option value="${q.k}">${esc(q.n)}</option>`).join('');
+  if(f.dataset.built!=='1'){f.innerHTML=opts;f.dataset.built='1'}f.value=S.quadro;
+}
+document.addEventListener('change',e=>{if(e.target.id==='fq'){S.quadro=e.target.value;render()}});
+document.addEventListener('change',async e=>{if(e.target.id!=='f-quadro')return;const p=cur();if(!p)return;const v=e.target.value;if(v===p.quadro)return;if(await write(p,{quadro:v},'Quadro alterado',(QMAP[p.quadro]||{n:'—'}).n+' → '+QMAP[v].n))toast('Quadro: '+QMAP[v].n)});
+$('#months').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;S.month=b.dataset.m;render()});
+
+function renderStat(){
+  const ps=S.posts.filter(inMonth);
+  const c=k=>ps.filter(p=>p.etapa===k).length;
+  const art=ps.filter(p=>p.tipo==='Arte').length, vid=ps.filter(p=>p.tipo==='Vídeo').length;
+  $('#stat').innerHTML=`<span><b>${art}</b> artes · <b>${vid}</b> vídeos</span>`+
+   ['revisao','final','ajustes','publicado'].map(k=>`<span><i class="dot" style="background:${SMAP[k].c}"></i>${SMAP[k].n}: <b>${c(k)}</b></span>`).join('')+
+   (S.downloads?`<button class="btn" id="csv" type="button">Exportar planilha</button>`:'');
+}
+document.addEventListener('click',e=>{if(e.target.id==='csv')exportCsv()});
+
+function render(){
+  {const n=S.posts.filter(p=>p.etapa==='final').length+S.posts.filter(p=>p.etapa==='revisao').length;const c=$('#apcount');if(c){c.textContent=n;c.hidden=!n}}
+  document.querySelectorAll('#tabs button').forEach(x=>x.setAttribute('aria-selected',String(x.dataset.v===S.view)));
+  renderMonths();
+  const bar=$('#bar');bar.hidden=(S.view==='guia'||S.view==='ideias'||S.view==='aprovar');
+  if(!bar.hidden)renderStat();
+  const v=$('#view');
+  if(S.dbFail){v.innerHTML='<p class="status">Não foi possível carregar os dados da central nesta visualização. Abra a página pelo claude.ai com a sua conta da organização.</p>';return}
+  if(S.view==='guia'){v.innerHTML=guiaHTML();return}
+  if(S.view==='ideias'){renderIdeias();return}
+  if(!S.loaded){v.innerHTML='<p class="status">Carregando a central…</p>';return}
+  if(!S.posts.length){v.innerHTML='<p class="status">Ainda não há posts cadastrados.</p>';return}
+  if(S.view==='aprovar'){renderAprov();return}
+  if(S.view==='painel')v.innerHTML=painelHTML();
+  if(S.view==='quadros')v.innerHTML=quadrosHTML();
+  if(S.view==='quadro')v.innerHTML=boardHTML();
+  if(S.view==='calendario')v.innerHTML=calHTML();
+  if(S.view==='lista')v.innerHTML=listHTML();
+  if(S.open)refreshPanel();
+}
+
+/* ---------- vistas ---------- */
+function lotes(arts){const g=[];const m={};(arts||[]).forEach((a,i)=>{const k=a.lote||('v'+(i+1));if(!m[k]){m[k]={k,itens:[]};g.push(m[k])}m[k].itens.push(a)});return g}
+function nextLote(p){return 'v'+(lotes(p.artes).length+1)}
+function lastArt(p){const g=lotes(p.artes);if(!g.length)return null;const it=g[g.length-1].itens;return it.find(a=>(a.tipo||'').startsWith('image/'))||it[0]}
+function artTile(a){
+  if(a.tipo==='link')return `<div class="art"><div class="pdf" style="font-size:14px;padding:10px;text-align:center">Link externo<br>${esc(a.nome||'')}</div><div class="art__m"><span>Link</span><a href="${esc(a.link)}" target="_blank" rel="noopener">Abrir</a></div></div>`;
+  const src='/_blob/'+a.id;const t=a.tipo||'';
+  const lab=a.lamina?'Lâmina '+a.lamina:(t==='application/pdf'?(a.pdf?'PDF para o LinkedIn':'PDF'):t.startsWith('video/')?'Vídeo':'Arte');
+  const m=t.startsWith('image/')?`<img src="${esc(src)}" alt="${esc(lab)}" loading="lazy">`:t.startsWith('video/')?`<video src="${esc(src)}" controls preload="metadata"></video>`:`<div class="pdf">PDF</div>`;
+  return `<div class="art">${m}<div class="art__m"><span>${esc(lab)}</span><a href="${esc(src)}" target="_blank" rel="noopener">Abrir</a></div></div>`}
+function galHTML(arts){
+  const g=lotes(arts);if(!g.length)return '<p class="empty" style="padding:0">Nenhuma arte enviada.</p>';
+  return g.slice().reverse().map((l,j)=>{const a0=l.itens[0];const u=who(a0);
+    return `<div style="margin-bottom:14px${j?';opacity:.75':''}"><p class="stat" style="margin:0 0 8px"><b style="color:var(--ink)">${j?'Versão anterior':'Versão atual'} · ${esc(l.k)}</b> · ${esc(fmtT(a0.at))} · ${esc(u.name)}</p><div class="gal">${l.itens.map(artTile).join('')}</div></div>`}).join('')}
+function cardHTML(p){
+  const s=SMAP[p.etapa]||SMAP.pauta, a=lastArt(p);
+  const thumb=a&&a.tipo&&a.tipo.startsWith('image/')?`<img class="card__img" src="/_blob/${esc(a.id)}" alt="" loading="lazy" draggable="false">`:'';
+  return `<button class="card" type="button" data-open="${esc(p._id)}" style="--st:${s.c}">
+   <div class="card__top"><span>${fmtD(p.data)} · ${esc(p.dia)}</span><span>${esc(p.formato)}</span></div>
+   <div class="card__t">${esc(p.tema)}</div>
+   <div class="card__m">${qTag(p)}${p.tipo==='Vídeo'?'<span class="tag tag--v">vídeo</span>':''}${p.origem==='Aprovado no documento'?'<span class="tag tag--ok">texto aprovado</span>':''}${p.origem==='Série Cultivando Conhecimento'?'<span class="tag tag--area">série bolsas</span>':''}${lotes(p.artes).length?`<span class="tag">v${lotes(p.artes).length}</span>`:''}</div>${slaHTML(p)}${thumb}</button>`;
+}
+function boardHTML(){
+  const ps=S.posts.filter(inMonth);
+  return `<p class="hint">${S.canWrite?"Arraste um card para outra coluna para mudar a etapa. Aprovações e pedidos de ajuste continuam dentro do post.":""}</p><div class="board">${STAGES.map(s=>{const it=ps.filter(p=>(p.etapa||'pauta')===s.k);
+   return `<section class="col" aria-label="${s.n}" data-drop-stage="${s.k}"><h3><span style="background:none;padding:0;color:inherit"><i class="dot" style="background:${s.c}"></i>${s.n}</span><span>${it.length}</span></h3><div class="cards">${it.map(cardHTML).join('')||'<div class="empty">Nada aqui.</div>'}</div></section>`}).join('')}</div>`;
+}
+function calHTML(){
+  const ms=S.month==='all'?['2026-10','2026-11','2026-12']:[S.month];
+  return ms.map(m=>{
+    const [y,mm]=m.split('-').map(Number);const first=new Date(y,mm-1,1);
+    const start=new Date(first);start.setDate(first.getDate()-((first.getDay()+6)%7));
+    let cells='';
+    for(let w=0;w<6;w++){for(let d=0;d<5;d++){const dt=new Date(start);dt.setDate(start.getDate()+w*7+d);
+      if(w===5&&dt.getMonth()!==mm-1)continue;
+      const inM=dt.getMonth()===mm-1;const iso=`${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,'0')}-${String(dt.getDate()).padStart(2,'0')}`;
+      const ps=inM?S.posts.filter(p=>p.data===iso):[];
+      cells+=`<div class="day${inM?'':' off'}${ps.length?'':' none'}"${inM?` data-drop-date="${iso}"`:''}><span class="d">${String(dt.getDate()).padStart(2,'0')}</span>${ps.map(p=>`<button class="ev" type="button" data-open="${esc(p._id)}" style="--st:${(SMAP[p.etapa]||SMAP.pauta).c}">${esc(p.tema)}</button>`).join('')}</div>`}}
+    const name=MONTHS.find(x=>x[0]===m)[1];
+    return (m===ms[0]&&S.canWrite?'<p class="hint">Arraste um post para outro dia para mudar a data de publicação.</p>':'')+`<section class="cal-month"><h2>${name}</h2><div class="cal">${['Seg','Ter','Qua','Qui','Sex'].map(d=>`<div class="dow">${d}</div>`).join('')}${cells}</div></section>`}).join('')+
+   `<div class="stat">${STAGES.map(s=>`<span><i class="dot" style="background:${s.c}"></i>${s.n}</span>`).join('')}</div>`;
+}
+function listHTML(){
+  const ps=S.posts.filter(inMonth);
+  return `<div class="tblwrap"><table><thead><tr><th>Data</th><th>Tema</th><th>Quadro</th><th>Formato</th><th>Etapa</th><th>Prazo</th><th>Valida o conteúdo</th><th>Artes</th></tr></thead><tbody>${ps.map(p=>{const s=SMAP[p.etapa]||SMAP.pauta;
+   return `<tr data-open="${esc(p._id)}" tabindex="0"><td class="num">${fmtD(p.data)} ${esc(p.dia)}</td><td><b>${esc(p.tema)}</b></td><td>${esc(qName(p))}</td><td>${esc(p.formato)}</td><td><span class="pill"><i class="dot" style="background:${s.c}"></i>${s.n}</span></td><td>${slaHTML(p)}</td><td>${esc(p.validacao)}</td><td class="num">${(p.artes||[]).length||'–'}</td></tr>`}).join('')}</tbody></table></div>`;
+}
+document.addEventListener('click',e=>{const o=e.target.closest('[data-open]');if(o)openPanel(o.dataset.open)});
+document.addEventListener('keydown',e=>{if(e.key==='Enter'){const o=e.target.closest('tr[data-open]');if(o)openPanel(o.dataset.open)}});
+
+/* ---------- aprovações ---------- */
+const CHECK={
+ final:['Texto e legendas revisados (ortografia, tom, hashtags)','Marca correta (logo, cores, @sciagrolab)','Arte e legenda batem com o briefing e o quadro','Nada de dado de patrocinador, código de estudo ou tela legível (BPL e sigilo)'],
+ revisao:['Informação técnica correta (termos, números, guias)','Esse escopo pode ser divulgado publicamente','Nada de dado de patrocinador, código de estudo ou tela legível (BPL e sigilo)']};
+S.ap={stage:'final',cur:null,slide:0,sel:new Set(),checks:{},batch:false};
+function apQueue(){return S.posts.filter(p=>p.etapa===S.ap.stage).sort((a,b)=>a.data<b.data?-1:1)}
+function apImgs(p){const g=lotes(p.artes);if(!g.length)return [];return g[g.length-1].itens.filter(a=>a.tipo!=='link')}
+function apLinks(p){const g=lotes(p.artes);if(!g.length)return [];return g[g.length-1].itens.filter(a=>a.tipo==='link')}
+function alvoOpts(p){const n=apImgs(p).filter(a=>(a.tipo||'').startsWith('image/')).length;
+  const o=['Geral'];if(n>1)for(let i=1;i<=n;i++)o.push('Lâmina '+i);else if(n===1)o.push('Arte');
+  o.push('Legenda Instagram','Legenda LinkedIn','Briefing');return o}
+function cmtsOf(p){return (p.historico||[]).filter(h=>h.acao==='Comentário'||h.acao==='Correção pedida')}
+function renderAprov(){
+  const v=$('#view');const keep={};v.querySelectorAll('textarea,select').forEach(el=>{if(el.id)keep[el.id]=el.value});
+  v.innerHTML=aprovHTML();
+  Object.entries(keep).forEach(([k,val])=>{const el=v.querySelector('#'+CSS.escape(k));if(el&&el.tagName==='TEXTAREA')el.value=val});
+}
+function aprovHTML(){
+  if(!S.loaded)return '<p class="status">Carregando…</p>';
+  const q=apQueue();const nF=S.posts.filter(p=>p.etapa==='final').length,nR=S.posts.filter(p=>p.etapa==='revisao').length;
+  if(!q.find(p=>p._id===S.ap.cur)){S.ap.cur=q.length?q[0]._id:null;S.ap.slide=0}
+  S.ap.sel=new Set([...S.ap.sel].filter(id=>q.some(p=>p._id===id)));
+  const seg=`<div class="ap__seg" role="group" aria-label="Etapa"><button data-apstage="final" aria-pressed="${S.ap.stage==='final'}">Aprovação final · ${nF}</button><button data-apstage="revisao" aria-pressed="${S.ap.stage==='revisao'}">Revisão técnica · ${nR}</button></div>`;
+  const list=q.map(p=>`<div class="ap__item" data-apgo="${esc(p._id)}" aria-current="${p._id===S.ap.cur}"><input type="checkbox" data-apsel="${esc(p._id)}" aria-label="Selecionar ${esc(p.tema)}" ${S.ap.sel.has(p._id)?'checked':''}${S.canWrite?'':' disabled'}><div><span class="d">${fmtD(p.data)} ${esc(p.dia)} · ${esc(qName(p))}</span><br><b>${esc(p.tema)}</b><div>${slaHTML(p)}</div></div></div>`).join('');
+  const nSel=S.ap.sel.size;
+  const batch=S.canWrite&&q.length?`<div class="ap__batch"><button class="btn" data-apall type="button">${nSel===q.length?'Desmarcar todos':'Selecionar todos'}</button><button class="btn btn--ok" data-apbatch type="button"${nSel?'':' disabled'}>Aprovar selecionados (${nSel})</button></div>`:'';
+  const side=`<aside>${seg}<div class="ap__list">${list||'<p class="none2">Nada nesta etapa.</p>'}</div>${batch}</aside>`;
+  let main;
+  if(S.ap.batch&&nSel){
+    const ck=CHECK[S.ap.stage];
+    main=`<section class="box"><h2 style="margin:0 0 6px">Aprovar ${nSel} post${nSel>1?'s':''} de uma vez</h2><p class="hint">${[...S.ap.sel].map(id=>{const p=S.posts.find(x=>x._id===id);return p?fmtD(p.data)+' '+esc(p.tema):''}).join(' · ')}</p>
+     <p style="margin:12px 0 6px;font-weight:600">Confirmo que revisei todos os selecionados:</p><div class="check">${ck.map((t,i)=>`<label><input type="checkbox" data-bck="${i}"> ${esc(t)}</label>`).join('')}</div>
+     <div class="row"><button class="btn btn--ok" data-apbatchgo type="button" disabled>Aprovar ${nSel}</button><button class="btn" data-apbatchcancel type="button">Voltar</button></div></section>`;
+  }else if(!q.length){
+    main=`<section class="box done"><b>Nada esperando ${S.ap.stage==='final'?'aprovação final':'revisão técnica'}.</b>Quando um post chegar nesta etapa, ele aparece aqui.</section>`;
+  }else{
+    const p=q.find(x=>x._id===S.ap.cur);const i=q.indexOf(p);const imgs=apImgs(p);const links=apLinks(p);
+    const sl=Math.min(S.ap.slide,Math.max(0,imgs.length-1));const a=imgs[sl];
+    const cm=cmtsOf(p);const count=l=>cm.filter(h=>h.alvo===l).length;
+    const labelOf=j=>imgs.filter(x=>(x.tipo||'').startsWith('image/')).length>1?'Lâmina '+(j+1):'Arte';
+    const media=a?((a.tipo||'').startsWith('image/')?`<img src="/_blob/${esc(a.id)}" alt="${esc(labelOf(sl))}">`:(a.tipo||'').startsWith('video/')?`<video src="/_blob/${esc(a.id)}" controls></video>`:`<a class="btn" href="/_blob/${esc(a.id)}" target="_blank" rel="noopener">Abrir PDF</a>`):`<p class="none2" style="padding:30px;text-align:center">Nenhuma arte enviada ainda.<br>Dá para revisar o texto e o briefing.</p>`;
+    const viewer=`<div class="viewer"><div class="viewer__stage"${a?'':' style="min-height:120px"'}>${media}${imgs.length>1?`<button class="viewer__arrow l" data-apslide="${sl-1}" aria-label="Anterior"${sl?'':' disabled'}>‹</button><button class="viewer__arrow r" data-apslide="${sl+1}" aria-label="Próxima"${sl<imgs.length-1?'':' disabled'}>›</button>`:''}</div>
+      ${imgs.length>1?`<div class="thumbs">${imgs.map((x,j)=>`<button class="thumb" data-apslide="${j}" aria-current="${j===sl}" aria-label="${esc(labelOf(j))}">${(x.tipo||'').startsWith('image/')?`<img src="/_blob/${esc(x.id)}" alt="">`:'<span class="stat" style="padding:6px">PDF</span>'}${count(labelOf(j))?`<b>${count(labelOf(j))}</b>`:''}</button>`).join('')}</div>`:''}
+      ${links.length?`<div class="row">${links.map(l=>`<a class="btn" href="${esc(l.link)}" target="_blank" rel="noopener">Abrir link externo (${esc(l.nome||'')})</a>`).join('')}</div>`:''}</div>`;
+    const tec=p.aprovTec?`Conteúdo validado${p.aprovTec.quem?' ('+esc(p.aprovTec.quem)+')':p.aprovTec.by&&PROF[p.aprovTec.by]?' por '+esc(PROF[p.aprovTec.by].name||''):''}${p.aprovTec.at?' em '+esc(fmtT(p.aprovTec.at)):''}`:'Ainda sem validação técnica';
+    const ck=CHECK[S.ap.stage];const saved=S.ap.checks[p._id]||[];
+    const alvoSel=`<select id="ap-alvo" style="width:auto">${alvoOpts(p).map(o=>`<option${o===(S.ap.alvo||'Geral')?' selected':''}>${esc(o)}</option>`).join('')}</select>`;
+    main=`<section class="box ap__main">
+      <div class="ap__head"><div><span class="stat">${fmtD(p.data)} ${esc(p.dia)} · ${esc(p.formato)} · ${esc(qName(p))}</span><h2>${esc(p.tema)}</h2></div>
+        <div class="ap__nav"><button class="btn" data-apstep="-1"${i?'':' disabled'}>‹ Anterior</button><span>${i+1} de ${q.length}</span><button class="btn" data-apstep="1"${i<q.length-1?'':' disabled'}>Próximo ›</button></div></div>
+      ${slaHTML(p)}
+      ${viewer}
+      <div class="caps2"><div><h4 class="mono" style="font-size:11px;color:var(--faint);margin:0 0 6px">Legenda Instagram${count('Legenda Instagram')?' · '+count('Legenda Instagram')+' coment.':''}</h4><div class="cap">${esc(p.legenda)}</div></div><div><h4 class="mono" style="font-size:11px;color:var(--faint);margin:0 0 6px">Legenda LinkedIn${count('Legenda LinkedIn')?' · '+count('Legenda LinkedIn')+' coment.':''}</h4><div class="cap">${esc(p.legenda_li)}</div></div></div>
+      <dl class="kv"><dt>Objetivo</dt><dd>${esc(p.objetivo)}</dd><dt>Etapa técnica</dt><dd>${tec}</dd><dt>Valida</dt><dd>${esc(p.validacao||'–')}</dd>${p.atencao?`<dt>Atenção</dt><dd>${esc(p.atencao)}</dd>`:''}</dl>
+      ${S.canWrite?`<div style="border-top:1px solid var(--line);padding-top:14px">
+        <p style="margin:0 0 6px;font-weight:700">Antes de aprovar</p>
+        <div class="check">${ck.map((t,j)=>`<label><input type="checkbox" data-ck="${j}" ${saved.includes(j)?'checked':''}> ${esc(t)}</label>`).join('')}</div>
+        <label class="l" for="ap-txt" style="margin-top:0">Comentário ou pedido de ajuste · sobre ${alvoSel}</label>
+        <textarea id="ap-txt" rows="3" placeholder="Ex.: trocar a foto da lâmina 3 por uma com o time usando EPI."></textarea>
+        <div class="bigbtns" style="margin-top:10px">
+          <button class="btn btn--ok" data-apok${saved.length===ck.length?'':' disabled'}>✓ ${S.ap.stage==='final'?'Aprovar para publicar':'Aprovar conteúdo'}</button>
+          <button class="btn btn--bad" data-apfix>✎ Pedir ajuste</button>
+          <button class="btn" data-apcmt>Só comentar</button>
+        </div>
+        <p class="hint" style="margin:8px 0 0">${saved.length===ck.length?'Tudo marcado. Pode aprovar.':'Marque os '+ck.length+' itens para liberar a aprovação.'} <button class="btn" style="padding:3px 8px;font-size:12px" data-apskip>Pular este</button></p>
+      </div>`:'<p class="hint">Você está só com leitura. Para aprovar, peça ao Fábio acesso de edição.</p>'}
+      <div><h4 class="mono" style="font-size:11px;color:var(--faint);margin:6px 0 8px">Comentários e ajustes neste post (${cm.length})</h4>
+        <ul class="cmts">${cm.slice().reverse().map(h=>{const u=who(h);return `<li><span class="alvo">${esc(h.alvo||'Geral')}</span><span class="who2">${esc(u.name)}</span> <span class="stat" style="display:inline">${esc(fmtT(h.at))}${h.acao==='Correção pedida'?' · pediu ajuste':''}</span><div class="pre">${esc(h.texto)}</div></li>`}).join('')||'<li class="none2" style="border:0;padding:0">Nenhum comentário ainda.</li>'}</ul></div>
+      <div class="row"><button class="btn" data-open="${esc(p._id)}">Abrir post completo</button></div>
+    </section>`;
+  }
+  return `<div class="ap" style="padding-top:18px">${side}<div>${main}</div></div>`;
+}
+function apNext(){const q=apQueue();const i=q.findIndex(p=>p._id===S.ap.cur);const n=q[i+1]||q[i-1]||null;S.ap.cur=n?n._id:null;S.ap.slide=0}
+document.addEventListener('click',async e=>{
+  if(S.view!=='aprovar')return;const t=e.target;
+  const st=t.closest('[data-apstage]');if(st){S.ap.stage=st.dataset.apstage;S.ap.cur=null;S.ap.sel.clear();S.ap.batch=false;render();return}
+  if(t.matches('[data-apsel]')){const id=t.dataset.apsel;t.checked?S.ap.sel.add(id):S.ap.sel.delete(id);render();return}
+  const go=t.closest('[data-apgo]');if(go&&!t.matches('input')){S.ap.cur=go.dataset.apgo;S.ap.slide=0;S.ap.batch=false;render();return}
+  const sl=t.closest('[data-apslide]');if(sl){S.ap.slide=+sl.dataset.apslide;render();return}
+  const stp=t.closest('[data-apstep]');if(stp){const q=apQueue();const i=q.findIndex(p=>p._id===S.ap.cur)+(+stp.dataset.apstep);if(q[i]){S.ap.cur=q[i]._id;S.ap.slide=0}render();return}
+  if(t.closest('[data-apskip]')){apNext();render();return}
+  if(t.closest('[data-apall]')){const q=apQueue();if(S.ap.sel.size===q.length)S.ap.sel.clear();else q.forEach(p=>S.ap.sel.add(p._id));render();return}
+  if(t.closest('[data-apbatch]')){S.ap.batch=true;render();return}
+  if(t.closest('[data-apbatchcancel]')){S.ap.batch=false;render();return}
+  if(t.closest('[data-apbatchgo]')){
+    const ids=[...S.ap.sel];const ck=CHECK[S.ap.stage];let ok=0;
+    for(const id of ids){const p=S.posts.find(x=>x._id===id);if(!p||p.etapa!==S.ap.stage)continue;
+      const stamp={by:S.uid||null,quem:meuNome(),at:new Date().toISOString(),checklist:ck,lote:true};
+      const patch=S.ap.stage==='final'?{etapa:'pronto',aprovFinal:stamp}:{etapa:'final',aprovTec:stamp};
+      if(await write(p,patch,S.ap.stage==='final'?'Aprovado para publicar (etapa 2)':'Conteúdo aprovado (etapa 1)','Aprovação em lote. Checklist confirmado: '+ck.join('; ')))ok++}
+    S.ap.sel.clear();S.ap.batch=false;toast(ok+' aprovado'+(ok===1?'':'s'));render();return}
+  const p=S.posts.find(x=>x._id===S.ap.cur);if(!p)return;
+  const txt=($('#ap-txt')||{}).value||'';const alvo=($('#ap-alvo')||{}).value||'Geral';
+  if(t.closest('[data-apok]')){const ck=CHECK[S.ap.stage];const stamp={by:S.uid||null,quem:meuNome(),at:new Date().toISOString(),checklist:ck};
+    const patch=S.ap.stage==='final'?{etapa:'pronto',aprovFinal:stamp}:{etapa:'final',aprovTec:stamp};
+    const note=txt.trim()?'\nObservação: '+txt.trim():'';
+    if(await write(p,patch,S.ap.stage==='final'?'Aprovado para publicar (etapa 2)':'Conteúdo aprovado (etapa 1)','Checklist confirmado: '+ck.join('; ')+note)){delete S.ap.checks[p._id];if($('#ap-txt'))$('#ap-txt').value='';toast('Aprovado');apNext();render()}return}
+  if(t.closest('[data-apfix]')){if(!txt.trim()){toast('Escreva o que precisa mudar');$('#ap-txt').focus();return}
+    if(await write(p,{etapa:'ajustes',correcaoDe:p.etapa},'Correção pedida',txt.trim(),{alvo})){$('#ap-txt').value='';toast('Ajuste pedido');apNext();render()}return}
+  if(t.closest('[data-apcmt]')){if(!txt.trim()){toast('Escreva o comentário');$('#ap-txt').focus();return}
+    if(await write(p,{},'Comentário',txt.trim(),{alvo})){$('#ap-txt').value='';toast('Comentário salvo')}return}
+});
+document.addEventListener('change',e=>{
+  if(S.view!=='aprovar')return;const t=e.target;
+  if(t.matches('[data-ck]')){const id=S.ap.cur;const a=new Set(S.ap.checks[id]||[]);t.checked?a.add(+t.dataset.ck):a.delete(+t.dataset.ck);S.ap.checks[id]=[...a];
+    const ck=CHECK[S.ap.stage];const b=document.querySelector('[data-apok]');if(b)b.disabled=a.size!==ck.length;
+    const h=b&&b.parentElement.nextElementSibling;if(h&&h.firstChild)h.firstChild.textContent=(a.size===ck.length?'Tudo marcado. Pode aprovar. ':'Marque os '+ck.length+' itens para liberar a aprovação. ');}
+  if(t.id==='ap-alvo')S.ap.alvo=t.value;
+  if(t.matches('[data-bck]')){const all=[...document.querySelectorAll('[data-bck]')].every(x=>x.checked);const b=document.querySelector('[data-apbatchgo]');if(b)b.disabled=!all}
+});
+
+/* ---------- quadros ---------- */
+const QUADROS=__QUADROS__;
+const QMAP=Object.fromEntries(QUADROS.map(q=>[q.k,q]));
+function qName(p){return (QMAP[p.quadro]||{n:'Sem quadro'}).n}
+function qTag(p){return `<span class="tag tag--q">${esc(qName(p))}</span>`}
+function pontos(p){
+  if((p.laminas||[]).length)return p.laminas.map(l=>l.replace(/^Capa:\s*/,'Capa: ').replace(/\s*\(Direção do documento aprovado: conferir lá antes de produzir\.\)/,''));
+  const r=(p.roteiro||'').split('\n').map(x=>x.trim()).filter(x=>/^(TAKE|ABERTURA|FECHAMENTO|\d|[0-9]+-[0-9]+s)/.test(x));
+  return r.map(x=>x.replace(/^(TAKE \d+|ABERTURA|FECHAMENTO|\d+|[0-9]+-[0-9]+s)\s*(\([^)]*\))?\s*:?\s*/,''));
+}
+function quadrosHTML(){
+  const ps=S.posts.filter(p=>S.month==='all'||p.data.startsWith(S.month));
+  const mName=S.month==='all'?'no trimestre':'em '+MONTHS.find(x=>x[0]===S.month)[1].toLowerCase();
+  const list=S.quadro==='all'?QUADROS:QUADROS.filter(q=>q.k===S.quadro);
+  const resumo=`<section class="box"><h2>Os quadros da SCI-AGRO</h2><p class="hint" style="margin:0 0 12px">Séries fixas: cada uma com propósito, formato e cuidados próprios. Todo post pertence a um quadro. Contagem ${mName}.</p>
+   <div class="tblwrap" style="border:0"><table style="min-width:640px"><thead><tr><th>Quadro</th><th>O que é</th><th>Formato</th><th>Posts</th></tr></thead><tbody>${list.map(q=>`<tr style="cursor:default"><td><b>${esc(q.n)}</b></td><td>${esc(q.oque)}</td><td>${esc(q.formato)}</td><td class="num">${ps.filter(p=>p.quadro===q.k).length}</td></tr>`).join('')}</tbody></table></div></section>`;
+  const secs=list.map(q=>{const it=ps.filter(p=>p.quadro===q.k);
+    return `<section class="box qd"><div class="qd__hd"><h2>${esc(q.n)}</h2><span class="stat">${it.length} post${it.length===1?'':'s'} ${esc(mName)}</span></div>
+     <p class="qd__lead">${esc(q.oque)}</p>
+     <dl class="kv qd__kv"><dt>Objetivo</dt><dd>${esc(q.objetivo)}</dd><dt>Formato</dt><dd>${esc(q.formato)}</dd><dt>Frequência</dt><dd>${esc(q.freq)}</dd><dt>Tom</dt><dd>${esc(q.tom)}</dd><dt>Cuidados</dt><dd>${esc(q.regras)}</dd><dt>Valida</dt><dd>${esc(q.valida)}</dd></dl>
+     <div class="qd__posts">${it.map(p=>{const s=SMAP[p.etapa]||SMAP.pauta;const pts=pontos(p);
+       return `<article class="qd__post"><button class="qd__t" type="button" data-open="${esc(p._id)}"><span class="dt">${fmtD(p.data)} ${esc(p.dia)}</span><b>${esc(p.tema)}</b><span class="pill"><i class="dot" style="background:${s.c}"></i>${s.n}</span></button>
+       <p class="qd__meta">${esc(p.formato)} · ${esc(p.pilar)}</p>
+       ${pts.length?`<ul class="qd__pts">${pts.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:`<p class="qd__meta">${esc(p.objetivo)}</p>`}</article>`}).join('')||'<p class="none2">Nenhum post deste quadro no período.</p>'}</div></section>`}).join('');
+  return `<div class="pg">${resumo}${secs}</div>`;
+}
+
+/* ---------- prazos ---------- */
+const MS=86400000;
+function dOf(iso){const [y,m,d]=iso.split('-').map(Number);return new Date(y,m-1,d)}
+function today0(){const t=new Date();return new Date(t.getFullYear(),t.getMonth(),t.getDate())}
+function fmtDate(d){return String(d.getDate()).padStart(2,'0')+'/'+String(d.getMonth()+1).padStart(2,'0')}
+const LATER={revisao:1,final:2,pronto:3,publicado:4};
+function prazo(p){
+  const e=p.etapa||'pauta';
+  if(e==='publicado')return {k:'done',t:'Publicado',ord:9};
+  const d0=dOf(p.data);
+  const steps=[
+    ['Arte',7,(p.artes||[]).length>0||LATER[e]>=1],
+    ['Revisão técnica',5,!!p.aprovTec||LATER[e]>=2],
+    ['Aprovação final',3,LATER[e]>=3],
+    ['Publicar',0,false]];
+  const st=steps.find(x=>!x[2]);
+  const due=new Date(d0.getTime()-st[1]*MS);const diff=Math.round((due-today0())/MS);
+  const when=diff===0?' (hoje)':diff===1?' (amanhã)':'';
+  if(e==='ajustes'&&diff>=0)return {k:'warn',t:'Ajustes: resolver até '+fmtDate(due),ord:2,due,step:st[0]};
+  if(diff<0)return {k:'late',t:(st[0]==='Publicar'?'Passou da data ':st[0]+' atrasada: era ')+fmtDate(due),ord:1,due,step:st[0]};
+  if(diff<=2)return {k:'warn',t:st[0]+' até '+fmtDate(due)+when,ord:2,due,step:st[0]};
+  return {k:'ok',t:st[0]+' até '+fmtDate(due),ord:3,due,step:st[0]};
+}
+const SLA_ICON={ok:'●',warn:'▲',late:'!',done:'✓'};
+function slaHTML(p){const r=prazo(p);return `<span class="sla sla--${r.k}"><i aria-hidden="true">${SLA_ICON[r.k]}</i>${esc(r.t)}</span>`}
+
+/* ---------- painel do gestor ---------- */
+function grupo(p){const x=(p.pilar||'').toLowerCase();
+  if(x.includes('cultivando')||x.startsWith('pessoas'))return 'Pessoas';
+  if(x.includes('saneante'))return 'Saneantes';
+  if(x.includes('biopest'))return 'Biopesticidas';
+  if(x.includes('área do mês'))return 'Bastidores / Área do mês';
+  if(x.includes('agro'))return 'Agro';
+  if(x.includes('ciência')||x.includes('autoridade'))return 'Ciência e autoridade';
+  return 'Institucional';}
+function qi(p,sub){return `<button class="qi" type="button" data-open="${esc(p._id)}"><span class="dt">${fmtD(p.data)} ${esc(p.dia)}</span><span><b>${esc(p.tema)}</b>${sub?`<span class="sub2">${esc(sub)}</span>`:''}</span>${slaHTML(p)}</button>`}
+function painelHTML(){
+  const ps=S.posts.filter(inMonth);const n=ps.length;
+  const mName=S.month==='all'?'Trimestre':MONTHS.find(x=>x[0]===S.month)[1];
+  const cnt=k=>ps.filter(p=>(p.etapa||'pauta')===k).length;
+  const ready=cnt('pronto')+cnt('publicado');
+  const stack=STAGES.filter(s=>cnt(s.k)).map(s=>`<i style="flex:${cnt(s.k)};background:${s.c}" title="${s.n}: ${cnt(s.k)}"></i>`).join('');
+  const pr=ps.map(p=>({p,r:prazo(p)}));
+  const c=k=>pr.filter(x=>x.r.k===k).length;
+  // fila
+  const rev=ps.filter(p=>p.etapa==='revisao');
+  const byArea={};rev.forEach(p=>{(byArea[p.validacao||'Sem área']=byArea[p.validacao||'Sem área']||[]).push(p)});
+  const fin=ps.filter(p=>p.etapa==='final');
+  const adj=ps.filter(p=>p.etapa==='ajustes');
+  const lastCorr=p=>{const h=[...(p.historico||[])].reverse().find(h=>h.acao==='Correção pedida');return h?'Pedido: '+h.texto:''};
+  const late=pr.filter(x=>x.r.k==='late'&&!['revisao','final','ajustes'].includes(x.p.etapa)).sort((a,b)=>a.r.due-b.r.due).map(x=>x.p);
+  const fila=`<section class="box q"><h2>Precisa de ação</h2>
+    <h3><i class="dot" style="background:var(--s-revisao)"></i>Revisão técnica · ${rev.length}</h3>${Object.keys(byArea).sort().map(a=>`<p class="none2" style="color:var(--ink);font-weight:600;margin-top:6px">${esc(a)}</p>`+byArea[a].map(p=>qi(p)).join('')).join('')||'<p class="none2">Nada esperando revisão.</p>'}
+    <h3><i class="dot" style="background:var(--s-final)"></i>Aprovação final · ${fin.length}</h3>${fin.map(p=>qi(p,p.aprovTec?'Conteúdo já validado':'')).join('')||'<p class="none2">Nada esperando aprovação final.</p>'}
+    <h3><i class="dot" style="background:var(--s-ajustes)"></i>Ajustes pedidos · ${adj.length}</h3>${adj.map(p=>qi(p,lastCorr(p))).join('')||'<p class="none2">Nenhum ajuste pendente.</p>'}
+    <h3><i class="dot" style="background:var(--late)"></i>Produção atrasada · ${late.length}</h3>${late.map(p=>qi(p,(SMAP[p.etapa]||SMAP.pauta).n)).join('')||'<p class="none2">Nada atrasado na produção.</p>'}
+  </section>`;
+  // próximos 14 dias (independente do filtro)
+  const t0=today0(),t14=new Date(t0.getTime()+14*MS);
+  const prox=S.posts.filter(p=>{const d=dOf(p.data);return d>=t0&&d<=t14}).sort((a,b)=>a.data<b.data?-1:1);
+  const proxHTML=`<section class="box q"><h2>Próximos 14 dias</h2>${prox.map(p=>qi(p,(SMAP[p.etapa]||SMAP.pauta).n+' · '+p.formato)).join('')||`<p class="none2">Nenhum post entre ${fmtDate(t0)} e ${fmtDate(t14)}.</p>`}</section>`;
+  // equilíbrio
+  const g={};ps.forEach(p=>{const k=qName(p);g[k]=(g[k]||0)+1});
+  const gk=Object.keys(g).sort((a,b)=>g[b]-g[a]);const mx=Math.max(1,...Object.values(g));
+  const areas=[...new Set(ps.filter(p=>p.area_mes).map(p=>(p.pilar||'').replace(/^.*Área do mês:?\s*/,'')).filter(Boolean))];
+  const areaTxt=areas.length?areas.join(', '):'—';
+  const validadores={};ps.forEach(p=>{(p.validacao||'').split('+').map(x=>x.trim()).filter(Boolean).forEach(v=>validadores[v]=(validadores[v]||0)+1)});
+  const vk=Object.keys(validadores).sort((a,b)=>validadores[b]-validadores[a]);
+  const eq=`<section class="box"><h2>Quadros do período · ${esc(mName)}</h2>
+    <div class="bars2">${gk.map(k=>`<div class="bar2" title="${esc(k)}: ${g[k]} posts"><span>${esc(k)}</span><div class="bar2__track"><div class="bar2__fill" style="width:${g[k]/mx*100}%"></div></div><b>${g[k]}</b></div>`).join('')}</div>
+    <div class="facts"><span><b>${ps.filter(p=>p.tipo==='Arte').length}</b> artes · <b>${ps.filter(p=>p.tipo==='Vídeo').length}</b> vídeos</span><span>Área do mês: <b>${esc(areaTxt)}</b></span></div>
+    <div class="facts"><span>Quem valida (posts no período):</span>${vk.map(v=>`<span>${esc(v)} <b>${validadores[v]}</b></span>`).join('')}</div>
+  </section>`;
+  const thermo=`<section class="box"><div class="thermo__t"><h2 style="margin:0">${esc(mName)} em números</h2><div class="thermo__big">${ready}<span>de ${n} prontos ou publicados</span></div></div>
+    <div class="stack" role="img" aria-label="Posts por etapa">${stack}</div>
+    <div class="legend">${STAGES.map(s=>`<span><i class="dot" style="background:${s.c}"></i>${s.n} <b>${cnt(s.k)}</b></span>`).join('')}</div>
+    <div class="tiles"><div class="tile tile--late"><b>${c('late')}</b><span>! Atrasados</span></div><div class="tile tile--warn"><b>${c('warn')}</b><span>▲ Prazo em até 2 dias</span></div><div class="tile tile--ok"><b>${c('ok')}</b><span>● Em dia</span></div><div class="tile tile--pub"><b>${c('done')}</b><span>✓ Publicados</span></div></div>
+    <p class="hint" style="margin:12px 0 0">Prazos automáticos: arte até 7 dias antes da data, revisão técnica até 5 dias antes, aprovação final até 3 dias antes.</p></section>`;
+  return `<div class="pg">${thermo}<div class="cols2">${fila}<div class="pg" style="padding:0">${proxHTML}${eq}</div></div></div>`;
+}
+
+/* ---------- arrastar (mouse) ---------- */
+const DOW=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];
+let drag=null, eatClick=false;
+document.addEventListener('pointerdown',e=>{
+  if(e.pointerType==='touch'||e.button!==0||!S.canWrite)return;
+  const el=e.target.closest('.card,.ev');if(!el)return;
+  drag={el,id:el.dataset.open,x:e.clientX,y:e.clientY,on:false,kind:el.classList.contains('card')?'stage':'date',target:null};
+});
+document.addEventListener('pointermove',e=>{
+  if(!drag)return;
+  if(!drag.on){if(Math.hypot(e.clientX-drag.x,e.clientY-drag.y)<6)return;
+    drag.on=true;drag.ghost=drag.el.cloneNode(true);drag.ghost.classList.add('ghost');drag.ghost.style.width=drag.el.offsetWidth+'px';
+    document.body.appendChild(drag.ghost);drag.el.classList.add('is-dragging');document.body.classList.add('dragging-now')}
+  e.preventDefault();
+  drag.ghost.style.transform=`translate(${e.clientX-20}px,${e.clientY-16}px) rotate(2deg)`;
+  const hit=document.elementFromPoint(e.clientX,e.clientY);
+  const t=hit&&hit.closest(drag.kind==='stage'?'[data-drop-stage]':'[data-drop-date]');
+  if(t!==drag.target){if(drag.target)drag.target.classList.remove('drop');drag.target=t;if(t)t.classList.add('drop')}
+  // rolagem automática do quadro na horizontal
+  const b=document.querySelector('.board');if(b&&drag.kind==='stage'){const r=b.getBoundingClientRect();if(e.clientX>r.right-40)b.scrollLeft+=14;else if(e.clientX<r.left+40)b.scrollLeft-=14}
+});
+function endDrag(){if(!drag)return;if(drag.ghost)drag.ghost.remove();drag.el.classList.remove('is-dragging');if(drag.target)drag.target.classList.remove('drop');document.body.classList.remove('dragging-now');drag=null}
+document.addEventListener('pointerup',async e=>{
+  if(!drag)return;const d=drag;
+  if(!d.on){drag=null;return}
+  eatClick=true;setTimeout(()=>eatClick=false,50);
+  const t=d.target;endDrag();if(!t)return;
+  const p=S.posts.find(x=>x._id===d.id);if(!p)return;
+  if(d.kind==='stage'){
+    const to=t.dataset.dropStage;if(to===(p.etapa||'pauta'))return;
+    if(to==='ajustes'){toast('Para pedir ajuste, escreva o que mudar dentro do post');openPanel(p._id);return}
+    const patch={etapa:to};if(p.etapa==='ajustes')patch.correcaoDe=null;
+    if(await write(p,patch,'Movido para '+SMAP[to].n+' (arrastando no quadro)'))toast('Movido para '+SMAP[to].n);
+  }else{
+    const iso=t.dataset.dropDate;if(iso===p.data)return;
+    const [y,m,dd]=iso.split('-').map(Number);const dia=DOW[new Date(y,m-1,dd).getDay()];
+    if(await write(p,{data:iso,dia,mes:iso.slice(0,7)},'Data alterada',fmtD(p.data)+' → '+fmtD(iso)))toast('Nova data: '+fmtD(iso)+' ('+dia+')');
+  }
+});
+document.addEventListener('pointercancel',endDrag);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&drag)endDrag()});
+document.addEventListener('click',e=>{if(eatClick){e.stopPropagation();e.preventDefault();eatClick=false}},true);
+
+/* ---------- painel do post ---------- */
+const panel=$('#panel');
+function openPanel(id){S.open=id;refreshPanel(true);if(!panel.open)panel.showModal()}
+panel.addEventListener('close',()=>{S.open=null});
+panel.addEventListener('click',e=>{if(e.target===panel)panel.close()});
+function cur(){return S.posts.find(p=>p._id===S.open)}
+
+function refreshPanel(force){
+  const p=cur();if(!p){panel.close();return}
+  // preserva o que a pessoa está digitando
+  const keep={};panel.querySelectorAll('textarea,input').forEach(el=>{if(el.id)keep[el.id]=el.value});
+  const active=document.activeElement&&panel.contains(document.activeElement)?document.activeElement.id:null;
+  const sc=panel.scrollTop;
+  panel.innerHTML=panelHTML(p);
+  if(!force){Object.entries(keep).forEach(([k,v])=>{const el=panel.querySelector('#'+CSS.escape(k));if(el&&el.dataset.live!=='1')el.value=v});
+    if(active){const el=panel.querySelector('#'+CSS.escape(active));if(el)el.focus()}panel.scrollTop=sc}
+}
+function stepsHTML(p){
+  const order=['pauta','producao','revisao','final','pronto','publicado'];
+  const i=order.indexOf(p.etapa==='ajustes'?(p.correcaoDe||'revisao'):p.etapa);
+  return `<div class="steps">${order.map((k,j)=>{const s=SMAP[k];const cls=p.etapa==='ajustes'&&j===i?'now':(j<i?'done':(j===i?'now':''));
+    const st=p.etapa==='ajustes'&&j===i?SMAP.ajustes.c:s.c;
+    return `<span class="step ${cls}" style="--st:${st}">${p.etapa==='ajustes'&&j===i?'Ajustes pedidos':s.n}</span>`}).join('')}</div>`;
+}
+function actionHTML(p){
+  const s=SMAP[p.etapa]||SMAP.pauta;const w=S.canWrite;
+  const dis=w?'':' disabled';
+  const lastCorr=[...(p.historico||[])].reverse().find(h=>h.acao==='Correção pedida');
+  let body='';
+  switch(p.etapa){
+    case 'pauta': body=`<p>Pauta definida. Quando a arte ou o vídeo começar, mova para produção.</p><div class="row"><button class="btn btn--pri" data-act="go" data-to="producao"${dis}>Iniciar produção</button></div>`;break;
+    case 'producao': {
+      const next=p.aprovTec?'final':'revisao';
+      body=`<p>${p.aprovTec?'O conteúdo já foi validado. Suba a arte e envie direto para a aprovação final.':'Suba a arte ou o vídeo e envie para o gestor técnico validar o conteúdo.'} ${(p.artes||[]).length?'':'<b>Nenhuma arte enviada ainda.</b>'}</p>
+      <div class="row"><button class="btn btn--pri" data-act="go" data-to="${next}"${dis}${(p.artes||[]).length?'':' disabled'}>Enviar para ${next==='final'?'aprovação final':'revisão técnica'}</button></div>`;break}
+    case 'revisao': body=`<p><b>Etapa 1 · Revisão técnica.</b> ${esc(p.validacao||'O gestor da área')} confere se o conteúdo está correto e pode ser divulgado (escopo, termos, BPL e sigilo).</p>${decideHTML('Aprovar conteúdo','final',dis)}`;break;
+    case 'final': body=`<p><b>Etapa 2 · Aprovação final.</b> Diretoria ou marketing aprova a arte, o vídeo e as legendas como vão ao ar.</p>${decideHTML('Aprovar para publicar','pronto',dis)}`;break;
+    case 'ajustes': body=`${lastCorr?`<div class="bad"><b>Correção pedida${lastCorr.by||lastCorr.quem?' por '+esc(who(lastCorr).name):''}:</b> ${esc(lastCorr.texto)}</div>`:''}
+      <p style="margin-top:10px">Ajuste a arte (suba uma nova versão) ou as legendas e reenvie.</p>
+      <div class="row"><button class="btn btn--pri" data-act="go" data-to="${esc(p.correcaoDe||'revisao')}"${dis}>Reenviar para ${p.correcaoDe==='final'?'aprovação final':'revisão técnica'}</button></div>`;break;
+    case 'pronto': body=`<p>Aprovado. Agende nos dois canais e marque como publicado com os links.</p>
+      <label class="l" for="f-ag">Agendado para</label><input type="datetime-local" id="f-ag" value="${esc(p.agendado||'')}"${dis}>
+      <label class="l" for="f-ig">Link no Instagram</label><input type="url" id="f-ig" placeholder="https://www.instagram.com/p/..." value="${esc(p.link_ig||'')}"${dis}>
+      <label class="l" for="f-li">Link no LinkedIn</label><input type="url" id="f-li" placeholder="https://www.linkedin.com/posts/..." value="${esc(p.link_li||'')}"${dis}>
+      <div class="row" style="margin-top:12px"><button class="btn" data-act="savepub"${dis}>Salvar agendamento</button><button class="btn btn--ok" data-act="publish"${dis}>Marcar como publicado</button></div>`;break;
+    case 'publicado': body=`<p>Publicado${p.agendado?' em '+esc(p.agendado.replace('T',' às ')):''}.</p><div class="row">${p.link_ig?`<a class="btn" href="${esc(p.link_ig)}" target="_blank" rel="noopener">Ver no Instagram</a>`:''}${p.link_li?`<a class="btn" href="${esc(p.link_li)}" target="_blank" rel="noopener">Ver no LinkedIn</a>`:''}<button class="btn" data-act="go" data-to="pronto"${dis}>Reabrir</button></div>`;break;
+  }
+  return `<section class="box act" style="--st:${s.c}"><h4>Próximo passo</h4>${body}${w?'':'<p style="margin-top:8px;font-size:13px">Você está só com leitura. Para aprovar, peça ao Fábio para convidar você com acesso de edição.</p>'}</section>`;
+}
+function decideHTML(okLabel,to,dis){
+  return `<div class="row"><button class="btn btn--ok" data-act="approve" data-to="${to}"${dis}>${okLabel}</button></div>
+  <label class="l" for="f-corr">Ou peça uma correção</label><textarea id="f-corr" placeholder="O que precisa mudar? Seja específico: lâmina, frase, termo."${dis}></textarea>
+  <div class="row" style="margin-top:8px"><button class="btn btn--bad" data-act="reject"${dis}>Pedir correção</button></div>`;
+}
+function panelHTML(p){
+  const s=SMAP[p.etapa]||SMAP.pauta;const w=S.canWrite;const dis=w?'':' disabled';
+  const arts=(p.artes||[]);
+  const gal=galHTML(arts);
+  const up=S.canAssets?`<div class="row" style="margin-top:12px"><label class="btn btn--pri" for="f-up">Subir ${arts.length?'nova versão':'arte ou vídeo'}</label><input type="file" id="f-up" multiple accept="image/png,image/jpeg,image/webp,image/gif,video/mp4,video/webm,application/pdf" hidden><span class="stat" id="upmsg">PNG, JPG, MP4 ou PDF até 20 MB cada. Carrossel: selecione todas as lâminas de uma vez (viram uma versão).</span></div>`:'<p class="stat" style="margin-top:10px">Só quem pode editar a central sobe arquivos.</p>';
+  const lk=S.canWrite?`<label class="l" for="f-link">Vídeo acima de 20 MB? Cole o link do Google Drive (com acesso liberado para quem aprova)</label><div class="row" style="flex-wrap:nowrap"><input type="url" id="f-link" placeholder="https://drive.google.com/..."><button class="btn" data-act="addlink" type="button">Adicionar</button></div>`:'';
+  const hist=[...(p.historico||[])].reverse();
+  return `<div class="pn__hd" style="--st:${s.c}"><button class="pn__x" aria-label="Fechar" data-act="close">×</button>
+   <div class="pn__meta">${fmtD(p.data)} · ${esc(p.dia)} · IG ${esc(p.hora)} · LinkedIn ${esc(p.hora_li||'8h30')} · ${esc(p.formato)}</div>
+   <h2 class="pn__t" id="pn-title">${esc(p.tema)}</h2>
+   <div class="card__m">${qTag(p)}<span class="tag">${esc(p.pilar)}</span>${p.area_mes?'<span class="tag tag--area">Área do mês</span>':''}${p.origem==='Aprovado no documento'?'<span class="tag tag--ok">texto aprovado no documento</span>':p.origem==='Do documento'?'<span class="tag">do documento</span>':p.origem==='Série Cultivando Conhecimento'?'<span class="tag tag--area">série Cultivando Conhecimento</span>':''}</div>
+   ${stepsHTML(p)}<div style="margin-top:8px">${slaHTML(p)}</div></div>
+  <div class="pn__bd">
+   ${actionHTML(p)}
+   <section class="box"><h4>Arte e vídeo</h4>${gal}${up}${lk}</section>
+   <section class="box brief"><h4>Briefing</h4>
+    <dl class="kv"><dt>Quadro</dt><dd>${S.canWrite?`<select id="f-quadro" style="width:auto;padding:4px 8px">${QUADROS.map(q=>`<option value="${q.k}"${q.k===p.quadro?' selected':''}>${esc(q.n)}</option>`).join('')}</select>`:esc(qName(p))}</dd><dt>Objetivo</dt><dd>${esc(p.objetivo)}</dd><dt>Valida o conteúdo</dt><dd>${esc(p.validacao||'–')}</dd><dt>Fonte</dt><dd>${esc(p.fonte||'–')}</dd></dl>
+    ${(p.laminas||[]).length?`<h4 style="margin-top:14px">${p.laminas.length>1?'Lâminas':'Arte'}</h4><ol>${p.laminas.map(l=>`<li>${esc(l)}</li>`).join('')}</ol>`:''}
+    ${p.roteiro?`<h4 style="margin-top:14px">Roteiro</h4><div class="pre">${esc(p.roteiro)}</div>`:''}
+    ${p.atencao?`<div class="warn" style="margin-top:14px"><b>Antes de publicar:</b> ${esc(p.atencao)}</div>`:''}
+   </section>
+   <section class="box"><h4>Legendas</h4>
+    ${p.origem==='Aprovado no documento'||p.origem==='Do documento'?`<p class="stat" style="margin:0 0 8px">Legenda copiada do <a href="${DOC_URL}" target="_blank" rel="noopener">documento de cronograma</a>. Se o texto mudar lá, atualize aqui também.</p>`:''}
+    <label class="l" for="f-cap">Instagram</label><textarea id="f-cap" rows="9"${dis}>${esc(p.legenda)}</textarea>
+    <label class="l" for="f-capli">LinkedIn</label><textarea id="f-capli" rows="9"${dis}>${esc(p.legenda_li)}</textarea>
+    <div class="row" style="margin-top:10px"><button class="btn" data-act="savecap"${dis}>Salvar legendas</button><button class="btn" data-act="copy" data-f="f-cap">Copiar Instagram</button><button class="btn" data-act="copy" data-f="f-capli">Copiar LinkedIn</button></div>
+   </section>
+   <section class="box"><h4>Histórico e comentários</h4>
+    <label class="l" for="f-com" style="margin-top:0">Comentar</label><textarea id="f-com" rows="2" placeholder="Uma observação para o time"${dis}></textarea>
+    <div class="row" style="margin:8px 0 14px"><button class="btn" data-act="comment"${dis}>Comentar</button></div>
+    <ul class="hist">${hist.map(h=>{const u=who(h);return `<li>${u.img?`<img src="${esc(u.img)}" alt="">`:'<span class="sys">SA</span>'}<div><span class="who">${esc(u.name)}</span><span class="when">${esc(fmtT(h.at))}</span><div class="a">${esc(h.acao)}</div>${h.texto?`<div class="txt">${esc(h.texto)}</div>`:''}</div></li>`}).join('')}</ul>
+   </section>
+  </div>`;
+}
+
+/* ---------- escrita ---------- */
+function nomeLocal(){try{return localStorage.getItem('sci-central-nome')||''}catch(_){return ''}}
+function meuNome(){return (S.me&&S.me.name)||nomeLocal()||'Alguém'}
+function entry(acao,texto){return {at:new Date().toISOString(),by:S.uid||null,quem:meuNome(),acao,texto:texto||''}}
+let busy=false;
+async function write(p,patch,acao,texto,extra){
+  if(busy)return false;busy=true;
+  try{
+    const h=[...(p.historico||[]),{...entry(acao,texto),...(extra||{})}];
+    await S.db.doc('posts/'+p._id).update({...patch,historico:h});
+    return true;
+  }catch(e){
+    if(e&&e.code==='invalid_argument'){S.canWrite=false;toast('Sua conta está só com leitura aqui.');refreshPanel()}
+    else if(e&&e.code==='unavailable'){toast('Conexão instável. Tente de novo em instantes.')}
+    else toast('Não foi possível salvar. Tente de novo.');
+    return false;
+  }finally{busy=false}
+}
+panel.addEventListener('click',async e=>{
+  const b=e.target.closest('[data-act]');if(!b)return;const p=cur();if(!p)return;const a=b.dataset.act;
+  if(a==='close'){panel.close();return}
+  if(a==='copy'){const t=panel.querySelector('#'+b.dataset.f).value;try{await navigator.clipboard.writeText(t);toast('Legenda copiada')}catch(_){const el=panel.querySelector('#'+b.dataset.f);el.focus();el.select();toast('Texto selecionado: use Ctrl+C')}return}
+  if(!S.canWrite)return;
+  if(a==='go'){const to=b.dataset.to;const patch={etapa:to};if(p.etapa==='ajustes')patch.correcaoDe=null;
+    if(await write(p,patch,'Movido para '+SMAP[to].n))toast(SMAP[to].n)}
+  if(a==='approve'){const to=b.dataset.to;const stamp={by:S.uid||null,at:new Date().toISOString()};
+    const patch={etapa:to};if(p.etapa==='revisao')patch.aprovTec=stamp;if(p.etapa==='final')patch.aprovFinal=stamp;
+    if(await write(p,patch,p.etapa==='revisao'?'Conteúdo aprovado (etapa 1)':'Aprovado para publicar (etapa 2)'))toast('Aprovado')}
+  if(a==='reject'){const t=panel.querySelector('#f-corr').value.trim();if(!t){toast('Escreva o que precisa mudar');panel.querySelector('#f-corr').focus();return}
+    if(await write(p,{etapa:'ajustes',correcaoDe:p.etapa},'Correção pedida',t))toast('Correção enviada')}
+  if(a==='savecap'){const l=panel.querySelector('#f-cap').value,li=panel.querySelector('#f-capli').value;
+    if(l===p.legenda&&li===p.legenda_li){toast('Nada mudou');return}
+    if(await write(p,{legenda:l,legenda_li:li},'Legendas editadas'))toast('Legendas salvas')}
+  if(a==='addlink'){const u=panel.querySelector('#f-link').value.trim();if(!/^https:\/\//.test(u)){toast('Cole um link que comece com https://');return}
+    const arts=[...(p.artes||[]),{tipo:'link',link:u,nome:u.replace(/^https:\/\/(www\.)?/,'').split('/')[0],by:S.uid||null,at:new Date().toISOString()}];
+    const patch={artes:arts};if(p.etapa==='pauta')patch.etapa='producao';
+    if(await write(p,patch,'Link externo adicionado (v'+arts.length+')',u)){panel.querySelector('#f-link').value='';toast('Link adicionado')}}
+  if(a==='comment'){const t=panel.querySelector('#f-com').value.trim();if(!t)return;
+    if(await write(p,{},'Comentário',t)){panel.querySelector('#f-com').value='';toast('Comentário publicado')}}
+  if(a==='savepub'||a==='publish'){const ag=panel.querySelector('#f-ag').value,ig=panel.querySelector('#f-ig').value.trim(),li=panel.querySelector('#f-li').value.trim();
+    const patch={agendado:ag,link_ig:ig,link_li:li};if(a==='publish')patch.etapa='publicado';
+    if(await write(p,patch,a==='publish'?'Marcado como publicado':'Agendamento salvo',[ag&&('Agendado: '+ag.replace('T',' ')),ig&&('IG: '+ig),li&&('LinkedIn: '+li)].filter(Boolean).join('\n')))toast(a==='publish'?'Publicado':'Agendamento salvo')}
+});
+panel.addEventListener('change',async e=>{
+  if(e.target.id!=='f-up')return;const fs=[...(e.target.files||[])];if(!fs.length)return;const p=cur();const msg=panel.querySelector('#upmsg');
+  if(fs.some(f=>f.size>20*1024*1024)){toast('Algum arquivo passa de 20 MB. Comprima ou use o link do Drive.');return}
+  fs.sort((x,y)=>x.name.localeCompare(y.name,undefined,{numeric:true}));
+  const lote=nextLote(p);const at=new Date().toISOString();const novos=[];const multi=fs.filter(f=>(f.type||'').startsWith('image/')).length>1;let n=0;
+  try{
+    for(const f of fs){
+      if(msg)msg.textContent='Enviando '+(novos.length+1)+' de '+fs.length+': '+f.name+'…';
+      const type=f.type||(f.name.toLowerCase().endsWith('.pdf')?'application/pdf':'');
+      const r=await S.assets.upload(f,type?{type}:undefined);
+      const isImg=(r.contentType||'').startsWith('image/');
+      novos.push({id:r.id,tipo:r.contentType,nome:f.name,lote,lamina:multi&&isImg?++n:null,by:S.uid||null,quem:meuNome(),at});
+    }
+    const patch={artes:[...(p.artes||[]),...novos]};if(p.etapa==='pauta')patch.etapa='producao';
+    if(await write(p,patch,'Arte enviada ('+lote+')',fs.map(f=>f.name).join('\n')))toast(fs.length>1?fs.length+' arquivos enviados':'Arte enviada');
+  }catch(err){const c=err&&err.code;
+    toast(c==='too_large'?'Arquivo grande demais.':c==='unsupported_type'?'Formato não aceito. Use PNG, JPG, MP4 ou PDF.':c==='quota_or_state'?'Espaço de arquivos cheio.':c==='rate_limited'?'Muitos envios seguidos. Aguarde um pouco.':'Não foi possível enviar o arquivo.');
+    if(msg)msg.textContent='';}
+});
+
+/* ---------- export ---------- */
+async function exportCsv(){
+  const cols=[['data','Data'],['dia','Dia'],['hora','Hora IG'],['formato','Formato'],['quadroNome','Quadro'],['pilar','Pilar'],['tema','Tema'],['etapa','Etapa'],['validacao','Valida o conteúdo'],['legenda','Legenda Instagram'],['legenda_li','Legenda LinkedIn'],['link_ig','Link IG'],['link_li','Link LinkedIn']];
+  const q=v=>'"'+String(v??'').replace(/"/g,'""')+'"';
+  const rows=S.posts.filter(inMonth).map(p=>cols.map(([k])=>q(k==='etapa'?(SMAP[p.etapa]||SMAP.pauta).n:k==='quadroNome'?qName(p):p[k])).join(';'));
+  const csv='﻿'+cols.map(c=>q(c[1])).join(';')+'\n'+rows.join('\n');
+  try{await S.downloads.save({filename:'cronograma-sci-agro-'+(S.month==='all'?'trimestre':S.month)+'.csv',data:new Blob([csv],{type:'text/csv'})})}catch(_){toast('Download cancelado ou indisponível')}
+}
+
+/* ---------- pautas das áreas ---------- */
+function renderIdeias(){
+  const v=$('#view');const w=S.canWrite;const dis=w?'':' disabled';
+  const keep={};v.querySelectorAll('#id-area,#id-tipo,#id-txt').forEach(el=>keep[el.id]=el.value);
+  v.innerHTML=`<div class="two" style="padding-top:18px">
+   <section class="box"><h4>Sugerir pauta</h4>
+    <p style="margin:0 0 6px;color:var(--soft);font-size:14px">Todo mês, cada área responde pelo menos uma destas três perguntas. As melhores entram no cronograma do mês seguinte.</p>
+    <label class="l" for="id-area">Sua área</label><select id="id-area"${dis}>${AREAS_LIST.map(a=>`<option>${esc(a)}</option>`).join('')}</select>
+    <label class="l" for="id-tipo">Tipo</label><select id="id-tipo"${dis}><option>Dúvida que o cliente sempre faz</option><option>Novidade da área (equipamento, guia, estudo)</option><option>Algo daqui que ninguém vê</option><option>Data, evento ou conquista</option><option>Outro</option></select>
+    <label class="l" for="id-txt">Sua ideia</label><textarea id="id-txt" rows="4" placeholder="Ex.: patrocinadores sempre perguntam quanto tempo leva um estudo de 5-batch."${dis}></textarea>
+    <div class="row" style="margin-top:10px"><button class="btn btn--pri" id="id-send" type="button"${dis}>Enviar sugestão</button></div>
+   </section>
+   <section><h2 style="margin:0 0 10px;font-size:20px">Sugestões recebidas <span class="stat" style="display:inline">(${S.ideias.length})</span></h2>
+    <div style="display:grid;gap:8px">${S.ideias.map(i=>{const u=who(i);return `<article class="idea"><div class="idea__h"><span><b style="color:var(--ink)">${esc(i.area)}</b> · ${esc(i.tipo)}</span><span>${esc(u.name)} · ${esc(fmtT(i.at))}</span></div><div class="pre">${esc(i.texto)}</div>
+     <div class="row"><label class="l" for="st-${esc(i._id)}" style="margin:0">Situação</label><select id="st-${esc(i._id)}" data-idea="${esc(i._id)}" style="width:auto"${dis}>${['Nova','Na pauta','Guardada','Descartada'].map(o=>`<option${o===i.status?' selected':''}>${o}</option>`).join('')}</select></div></article>`}).join('')||'<p class="empty">Nenhuma sugestão ainda. Compartilhe esta página com os gestores e peça uma pauta por área.</p>'}</div></section></div>`;
+  Object.entries(keep).forEach(([k,val])=>{const el=v.querySelector('#'+k);if(el)el.value=val});
+}
+document.addEventListener('click',async e=>{
+  if(e.target.id!=='id-send')return;const t=$('#id-txt').value.trim();if(!t){toast('Escreva a ideia');return}
+  try{await S.db.collection('ideias').add({area:$('#id-area').value,tipo:$('#id-tipo').value,texto:t,by:S.uid||null,quem:meuNome(),at:new Date().toISOString(),status:'Nova'});$('#id-txt').value='';toast('Sugestão enviada. Obrigado!')}
+  catch(err){toast(err&&err.code==='quota_exceeded'?'Limite de registros atingido.':'Não foi possível enviar.')}
+});
+document.addEventListener('change',async e=>{const id=e.target.dataset&&e.target.dataset.idea;if(!id)return;
+  try{await S.db.doc('ideias/'+id).update({status:e.target.value});toast('Situação atualizada')}catch(_){toast('Não foi possível salvar.')}});
+
+/* ---------- guia ---------- */
+function guiaHTML(){
+  return `<div class="sec">
+  <h2>Como funciona a aprovação</h2><p class="sub">Todo post passa por duas etapas. Quem aprova ou pede correção fica registrado no histórico do post.</p>
+  <div class="flow">
+   <div style="--st:var(--s-producao)"><b>1. Produção</b>Fábio produz e sobe a arte ou o vídeo no post.</div>
+   <div style="--st:var(--s-revisao)"><b>2. Revisão técnica</b>O gestor da área (campo "Valida o conteúdo") confere termos, escopo, BPL e sigilo.</div>
+   <div style="--st:var(--s-final)"><b>3. Aprovação final</b>Diretoria ou marketing aprova arte e legendas como vão ao ar.</div>
+   <div style="--st:var(--s-ajustes)"><b>Ajustes</b>Qualquer etapa pode pedir correção por escrito. O post volta para quem pediu depois do ajuste.</div>
+   <div style="--st:var(--s-pronto)"><b>4. Pronto e publicado</b>Agendar no Instagram (12h/18h) e no LinkedIn (8h30), colar os links e marcar como publicado.</div>
+  </div>
+  <p class="sub" style="margin-top:12px">Quem aprova precisa ser convidado pelo menu Compartilhar. Pessoas de fora da organização do Fábio entram por convite de e-mail com acesso de edição (só leitura não permite aprovar). No primeiro acesso, quem não aparece com nome escreve o nome no topo da página, e ele assina as aprovações.</p>
+
+  <h2>Insights para a produção de conteúdo</h2><p class="sub">O que sugiro para o conteúdo passar pela empresa inteira e sair do marketing sozinho.</p>
+  <div class="ins">${INSIGHTS.map(([t,d])=>`<article><h3>${esc(t)}</h3><p>${esc(d)}</p></article>`).join('')}</div>
+
+  <h2>Rota da Área do mês</h2><p class="sub">Um departamento por mês: Reels de bastidor + post com o time e a aspa do gestor. Out a dez já estão no cronograma.</p>
+  <div class="tblwrap"><table style="min-width:620px"><thead><tr><th>Mês</th><th>Área</th><th>Ângulo</th></tr></thead><tbody>${AREAS.map(([m,a,d])=>`<tr style="cursor:default"><td class="num">${esc(m)}</td><td><b>${esc(a)}</b></td><td>${esc(d)}</td></tr>`).join('')}</tbody></table></div>
+
+  <h2>Stories de apoio</h2><p class="sub">Opcionais, fora da conta de artes e vídeos.</p>
+  <div class="ins">${EXTRAS.map(([q,t])=>`<article><h3 style="font-size:14px;font-family:var(--mono);font-weight:500;color:var(--blue)">${esc(q)}</h3><p>${esc(t)}</p></article>`).join('')}</div>
+
+  <h2>Padrões</h2>
+  <div class="box"><dl class="kv">
+   <dt>Artes</dt><dd>1080 × 1350 (4:5). Carrossel de 5 a 6 lâminas; no LinkedIn sobe como documento (PDF).</dd>
+   <dt>Vídeos</dt><dd>1080 × 1920 (9:16), legendas na tela, capa com o título.</dd>
+   <dt>Cores</dt><dd>Navy #062A43 · Azul #0054A6 · Lime #8CC63F · Fundo #F3F7FA</dd>
+   <dt>Tipografia</dt><dd>Figtree nos títulos e textos; IBM Plex Mono em rótulos e números.</dd>
+   <dt>Volume</dt><dd>Out e nov: 6 artes + 2 vídeos. Dez: 4 artes + 2 vídeos. Mais a série Cultivando Conhecimento (bolsas de estudo), 4 carrosséis extras espalhados: 15/10, 04/11, 25/11 e 09/12.</dd>
+   <dt>Regra BPL</dt><dd>Nada de etiqueta, código de estudo, tela legível, nome de patrocinador ou animal em imagem. Filmagem em área de teste só com liberação da Garantia da Qualidade.</dd>
+   <dt>Documento</dt><dd><a href="${DOC_URL}" target="_blank" rel="noopener">Cronograma original com os posts aprovados</a></dd>
+  </dl></div>
+  </div>`;
+}
+</script>

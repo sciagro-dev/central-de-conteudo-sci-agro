@@ -1,0 +1,1532 @@
+{
+ "2026-10-06": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": {
+   "at": "2026-09-24T18:00:00Z",
+   "by": null,
+   "quem": "Documento de cronograma"
+  },
+  "area_mes": false,
+  "artes": [],
+  "atencao": "",
+  "correcaoDe": null,
+  "data": "2026-10-06",
+  "dia": "Ter",
+  "etapa": "producao",
+  "fonte": "Documento de cronograma (Arte 1 e Post 1), aprovado.",
+  "formato": "Arte estática",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Texto aprovado no documento de cronograma: pula a revisão técnica e vai direto para a aprovação final depois da arte."
+   },
+   {
+    "acao": "Legendas importadas do documento",
+    "at": "2026-09-24T19:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Texto literal do Post 1 do documento Cronograma Conteudos, usado no Instagram e no LinkedIn."
+   },
+   {
+    "acao": "Arte enviada (v1)",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Arte criada seguindo a direção aprovada no documento. Como o texto já estava aprovado, vai direto para a aprovação final."
+   },
+   {
+    "acao": "Movido para Aprovação final",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   },
+   {
+    "acao": "Artes removidas",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "A pedido do Fábio, as artes geradas pelo Claude foram apagadas. O briefing continua no post."
+   },
+   {
+    "acao": "Movido para Em produção",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Arte clean, fundo claro, azul e verde. Texto: 'Testes e estudos com responsabilidade para apoiar decisões'. CTA: 'Fale com nossa equipe'. (Direção do documento aprovado: conferir lá antes de produzir.)"
+  ],
+  "legenda": "Seu produto. Nossa responsabilidade.\n\nNa SCI-AGRO, cada estudo é conduzido com rigor científico, responsabilidade e atenção aos detalhes.\n\nRealizamos análises que apoiam decisões estratégicas, o desenvolvimento de produtos e a geração de dados confiáveis para diferentes etapas de cada projeto.\n\nCom estrutura especializada e equipe técnica qualificada, trabalhamos para entregar resultados consistentes, rastreáveis e alinhados às necessidades de nossos clientes.\n\nFale com nossa equipe e conheça nossas soluções.\n\n#SCIAgro #Ciência #AnálisesLaboratoriais #RigorCientífico #DesenvolvimentoDeProdutos #Qualidade #Pesquisa #Laboratório",
+  "legenda_li": "Seu produto. Nossa responsabilidade.\n\nNa SCI-AGRO, cada estudo é conduzido com rigor científico, responsabilidade e atenção aos detalhes.\n\nRealizamos análises que apoiam decisões estratégicas, o desenvolvimento de produtos e a geração de dados confiáveis para diferentes etapas de cada projeto.\n\nCom estrutura especializada e equipe técnica qualificada, trabalhamos para entregar resultados consistentes, rastreáveis e alinhados às necessidades de nossos clientes.\n\nFale com nossa equipe e conheça nossas soluções.\n\n#SCIAgro #Ciência #AnálisesLaboratoriais #RigorCientífico #DesenvolvimentoDeProdutos #Qualidade #Pesquisa #Laboratório",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-10",
+  "objetivo": "Reforçar o posicionamento da SCI-AGRO como parceira técnica. Abre o mês e apresenta a marca para quem chega.",
+  "origem": "Aprovado no documento",
+  "pilar": "Institucional",
+  "quadro": "institucional",
+  "roteiro": "",
+  "tema": "Seu produto. Nossa responsabilidade.",
+  "tipo": "Arte",
+  "validacao": "Diretoria / Comercial"
+ },
+ "2026-10-08": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": {
+   "at": "2026-09-24T18:00:00Z",
+   "by": null,
+   "quem": "Documento de cronograma"
+  },
+  "area_mes": false,
+  "artes": [],
+  "atencao": "",
+  "correcaoDe": null,
+  "data": "2026-10-08",
+  "dia": "Qui",
+  "etapa": "producao",
+  "fonte": "Documento de cronograma (Arte 3 e Post 3), aprovado.",
+  "formato": "Arte estática",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Texto aprovado no documento de cronograma: pula a revisão técnica e vai direto para a aprovação final depois da arte."
+   },
+   {
+    "acao": "Legendas importadas do documento",
+    "at": "2026-09-24T19:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Texto literal do Post 3 do documento Cronograma Conteudos, usado no Instagram e no LinkedIn."
+   },
+   {
+    "acao": "Arte enviada (v1)",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Arte criada seguindo a direção aprovada no documento. Como o texto já estava aprovado, vai direto para a aprovação final."
+   },
+   {
+    "acao": "Movido para Aprovação final",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   },
+   {
+    "acao": "Artes removidas",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "A pedido do Fábio, as artes geradas pelo Claude foram apagadas. O briefing continua no post."
+   },
+   {
+    "acao": "Movido para Em produção",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Linguagem household, ícones de mosquito, mosca, barata e formiga, fundo branco com azul e verde. CTA: 'Solicite informações sobre estudos de eficácia'. (Direção do documento aprovado: conferir lá antes de produzir.)"
+  ],
+  "legenda": "Comprovar a eficácia é uma etapa essencial para o desenvolvimento e o sucesso de um produto inseticida.\n\nNa SCI-AGRO, realizamos estudos de eficácia para apoiar fabricantes na validação e no desenvolvimento de produtos destinados ao controle de mosquitos, moscas, baratas e formigas, dentre outros.\n\nCom estrutura especializada, equipe técnica qualificada e resultados confiáveis, conduzimos os estudos de acordo com as necessidades de cada projeto.\n\nEntre em contato e solicite mais informações sobre nossos estudos de eficácia. 🦟🪰🪳🐜\n\n#SCIAgro #Saneantes #Inseticidas #EstudosDeEficácia #ControleDePragas #Household #AnálisesLaboratoriais #DesenvolvimentoDeProdutos",
+  "legenda_li": "Comprovar a eficácia é uma etapa essencial para o desenvolvimento e o sucesso de um produto inseticida.\n\nNa SCI-AGRO, realizamos estudos de eficácia para apoiar fabricantes na validação e no desenvolvimento de produtos destinados ao controle de mosquitos, moscas, baratas e formigas, dentre outros.\n\nCom estrutura especializada, equipe técnica qualificada e resultados confiáveis, conduzimos os estudos de acordo com as necessidades de cada projeto.\n\nEntre em contato e solicite mais informações sobre nossos estudos de eficácia. 🦟🪰🪳🐜\n\n#SCIAgro #Saneantes #Inseticidas #EstudosDeEficácia #ControleDePragas #Household #AnálisesLaboratoriais #DesenvolvimentoDeProdutos",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-10",
+  "objetivo": "Apresentar os estudos de eficácia para inseticidas domissanitários a fabricantes de household.",
+  "origem": "Aprovado no documento",
+  "pilar": "Saneantes",
+  "quadro": "saneantes",
+  "roteiro": "",
+  "tema": "Comprovar eficácia é essencial para inseticida",
+  "tipo": "Arte",
+  "validacao": "Área de eficácia (saneantes)"
+ },
+ "2026-10-09": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "RH confirma: (1) o nome oficial 'Projeto AVANTE · Desenvolver para Crescer'; (2) se a lista de benefícios está completa e atual; (3) se podemos citar as operadoras (Unimed, Uniodonto, Porto, SESC, Excellent Global, Wellhub, ZenKlub). A legenda usa categorias genéricas até essa confirmação.",
+  "correcaoDe": null,
+  "data": "2026-10-09",
+  "dia": "Sex",
+  "etapa": "pauta",
+  "fonte": "Integração SCI-AGRO 2026 (slides Benefícios e Desenvolvimento) + definição do Fábio em 25/09/2026: o AVANTE reúne todos os benefícios e programas.",
+  "formato": "Carrossel (6 lâminas)",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-25T17:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta nova, pedida pelo Fábio: apresentar o Projeto AVANTE antes da série Cultivando Conhecimento (15/10), que passa a ser uma das partes dele."
+   },
+   {
+    "acao": "Legenda ajustada",
+    "at": "2026-09-25T18:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Fechamento aponta para o Cultivando Conhecimento (15/10); as outras partes do AVANTE ficam para 2027."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: 'Projeto AVANTE · Desenvolver para Crescer' + 'Crescer é um caminho.'",
+   "O que é: o programa que reúne os benefícios e o desenvolvimento dos colaboradores da SCI-AGRO.",
+   "Cuidar: saúde (médica, odontológica, seguro de vida) e rotina (alimentação, transporte fretado).",
+   "Bem-estar: atividade física, cuidado emocional e acesso a lazer.",
+   "Desenvolver: idiomas e o Cultivando Conhecimento, programa de bolsas de estudo.",
+   "Fechamento: 'Profissionais mais preparados e engajados.' + 'Próximo post: Cultivando Conhecimento.'"
+  ],
+  "legenda": "Crescer não é um passo. É um caminho. 🚀\n\nApresentamos o Projeto AVANTE · Desenvolver para Crescer, o programa que reúne tudo o que a SCI-AGRO oferece para o desenvolvimento e o bem-estar de quem faz o laboratório acontecer.\n\nDentro do AVANTE:\n🩺 Saúde: assistência médica e odontológica e seguro de vida\n🍽️ Rotina: alimentação e transporte fretado\n🧘 Bem-estar: atividade física, cuidado emocional e acesso a lazer\n🌎 Idiomas\n🎓 Cultivando Conhecimento, nosso programa de bolsas de estudo\n\nA ideia é acompanhar de perto cada pessoa, com ferramentas para crescer técnica e pessoalmente, e preparar o time para os desafios do setor.\n\nNa próxima semana, começamos pelo Cultivando Conhecimento, nosso programa de bolsas de estudo. 👉\n\n#SCIAGRO #ProjetoAVANTE #DesenvolverParaCrescer #GestãoDePessoas #Benefícios #EmployerBranding #CarreiraNoAgro",
+  "legenda_li": "Crescer não é um passo. É um caminho.\n\nApresentamos o Projeto AVANTE · Desenvolver para Crescer, o programa que reúne os benefícios e as iniciativas de desenvolvimento da SCI-AGRO para os nossos colaboradores.\n\nNo AVANTE estão saúde (assistência médica e odontológica, seguro de vida), rotina (alimentação e transporte fretado), bem-estar (atividade física, cuidado emocional e acesso a lazer), idiomas e o Cultivando Conhecimento, nosso programa de bolsas de estudo.\n\nO objetivo é acompanhar de perto o desenvolvimento de cada pessoa e preparar o time para os desafios do setor: profissionais mais preparados, engajados e com competências que se aplicam no dia a dia do laboratório.\n\nNa próxima semana, começamos pelo Cultivando Conhecimento, nosso programa de bolsas de estudo.\n\n#SCIAGRO #ProjetoAVANTE #GestãoDePessoas #EmployerBranding",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-10",
+  "objetivo": "Apresentar o programa guarda-chuva de pessoas da SCI-AGRO e abrir a série Cultivando Conhecimento (15/10) como uma das partes dele.",
+  "origem": "Pedido do Fábio (25/09/2026)",
+  "pilar": "Pessoas / Projeto AVANTE",
+  "quadro": "institucional",
+  "roteiro": "",
+  "tema": "Conheça o Projeto AVANTE · Desenvolver para Crescer",
+  "tipo": "Arte",
+  "validacao": "RH"
+ },
+ "2026-10-12": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "Feriado (N. Sra. Aparecida): deixar agendado na sexta. Pedir autorização de uso de imagem de quem aparecer na foto.",
+  "correcaoDe": null,
+  "data": "2026-10-12",
+  "dia": "Seg",
+  "etapa": "pauta",
+  "fonte": "Data comemorativa (12/10).",
+  "formato": "Post único",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   },
+   {
+    "acao": "Arte enviada (v1)",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Arte criada (1 lâmina). Enviada para revisão técnica. Foto provisória: vista aérea da SCI-AGRO (da apresentação comercial). O briefing pede foto real dos agrônomos do time: trocar se conseguir a foto."
+   },
+   {
+    "acao": "Movido para Revisão técnica",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   },
+   {
+    "acao": "Artes removidas",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "A pedido do Fábio, as artes geradas pelo Claude foram apagadas. O briefing continua no post."
+   },
+   {
+    "acao": "Movido para Pauta",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   }
+  ],
+  "hora": "10h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Arte única 4:5: foto real de um ou mais agrônomos do time em ação (campo ou laboratório), com a frase 'Ciência que começa no campo.' e '12 de outubro · Dia do Engenheiro Agrônomo'. Barrinha azul/lime/neutro da marca."
+  ],
+  "legenda": "Ciência que começa no campo. 🌱\n\nHoje é Dia do Engenheiro Agrônomo, profissional que conecta o que acontece na lavoura ao que acontece no laboratório.\n\nNosso agradecimento aos agrônomos do time SCI-AGRO, que ajudam todos os dias a transformar conhecimento em produtos mais seguros para quem produz e para quem consome.\n\nFeliz dia! 💙💚\n\n#SCIAGRO #DiaDoEngenheiroAgrônomo #Agronomia #Agronegócio #PessoasQueFazem",
+  "legenda_li": "Hoje, 12 de outubro, é Dia do Engenheiro Agrônomo.\n\nNa SCI-AGRO, agrônomos ajudam a ligar o que acontece na lavoura ao que é avaliado no laboratório: do desenho de estudos à interpretação de dados que sustentam o registro de novos produtos.\n\nNosso agradecimento aos profissionais do time que fazem essa ponte todos os dias.\n\n#SCIAGRO #DiaDoEngenheiroAgrônomo #Agronomia #Agronegócio",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-10",
+  "objetivo": "Homenagear os agrônomos do time e humanizar a marca.",
+  "origem": "Novo",
+  "pilar": "Pessoas / Datas",
+  "quadro": "institucional",
+  "roteiro": "",
+  "tema": "Dia do Engenheiro Agrônomo",
+  "tipo": "Arte",
+  "validacao": "RH"
+ },
+ "2026-10-15": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "Se quiser usar o gancho do Dia do Professor também no Instagram, acrescentar uma linha no início da legenda (a do LinkedIn já traz).",
+  "correcaoDe": null,
+  "data": "2026-10-15",
+  "dia": "Qui",
+  "etapa": "producao",
+  "fonte": "Projeto: claude/posts-cultivando-conhecimento.md (legendas da série).",
+  "formato": "Carrossel (5 lâminas)",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:30:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Série Cultivando Conhecimento 01 · Lançamento. Legenda do Instagram vem do material da série no projeto; se as artes já existem, é só subir e enviar para a revisão do RH."
+   },
+   {
+    "acao": "Arte enviada (v1)",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Arte criada (5 lâminas + PDF para o LinkedIn). Enviada para revisão técnica. Artes criadas agora. Se o RH já tinha artes da série, comparar antes de aprovar."
+   },
+   {
+    "acao": "Movido para Revisão técnica",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   },
+   {
+    "acao": "Artes removidas",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "A pedido do Fábio, as artes geradas pelo Claude foram apagadas. O briefing continua no post."
+   },
+   {
+    "acao": "Movido para Em produção",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   },
+   {
+    "acao": "Legenda ajustada",
+    "at": "2026-09-25T17:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Incluída a menção ao Projeto AVANTE (programa que reúne os benefícios e o desenvolvimento dos colaboradores), a pedido do Fábio."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: 'Aqui, conhecimento também se cultiva.' + selo Cultivando Conhecimento e assinatura 'Projeto AVANTE'.",
+   "O que é: o programa de bolsas de estudo da SCI-AGRO para colaboradores, parte do Projeto AVANTE.",
+   "Por quê: formação acadêmica e aprimoramento profissional de quem faz a empresa acontecer.",
+   "Para quê: crescimento pessoal e profissional, capacitação contínua, preparo para os desafios do setor.",
+   "Fechamento: 'O crescimento das pessoas é o motor da evolução da empresa.' + 'Nos próximos posts, como funciona.'"
+  ],
+  "legenda": "Aqui, conhecimento também se cultiva. 🌱\n\nDentro do Projeto AVANTE, apresentamos o Cultivando Conhecimento: o programa de bolsas de estudo da SCI-AGRO para os nossos colaboradores.\n\nEle nasceu para dar suporte real à formação acadêmica e ao aprimoramento profissional de quem faz a empresa acontecer: estimular o crescimento pessoal e profissional, incentivar a capacitação contínua e preparar o time para os desafios atuais e futuros do setor.\n\nAcreditamos que o crescimento das pessoas é o principal motor para a evolução da organização.\n\nNos próximos posts, mostramos como o programa funciona. 👉\n\n#SCIAGRO #ProjetoAVANTE #CultivandoConhecimento #BolsaDeEstudos #DesenvolvimentoProfissional #GestãoDePessoas #Educação #Agronegócio",
+  "legenda_li": "Aqui, conhecimento também se cultiva.\n\nNo Dia do Professor, apresentamos o Cultivando Conhecimento, o programa de bolsas de estudo da SCI-AGRO para os nossos colaboradores e uma das frentes do Projeto AVANTE.\n\nO objetivo é dar suporte real à formação acadêmica e ao aprimoramento profissional do time: estimular o crescimento pessoal e profissional, incentivar a capacitação contínua e preparar as pessoas para os desafios atuais e futuros do setor.\n\nAcreditamos que o crescimento das pessoas é o principal motor da evolução de uma organização. Nas próximas semanas, mostramos como o programa funciona.\n\n#SCIAGRO #ProjetoAVANTE #CultivandoConhecimento #DesenvolvimentoProfissional #GestãoDePessoas",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-10",
+  "objetivo": "Lançar o programa de bolsas de estudo. A data do Dia do Professor (15/10) reforça o tema.",
+  "origem": "Série Cultivando Conhecimento",
+  "pilar": "Pessoas / Cultivando Conhecimento",
+  "quadro": "cultivando",
+  "roteiro": "",
+  "tema": "Cultivando Conhecimento 01: Aqui, conhecimento também se cultiva",
+  "tipo": "Arte",
+  "validacao": "RH"
+ },
+ "2026-10-16": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "Explicar PP/DE na lâmina (Pesquisador Principal / Diretor de Estudo) ou retirar a sigla.",
+  "correcaoDe": null,
+  "data": "2026-10-16",
+  "dia": "Sex",
+  "etapa": "pauta",
+  "fonte": "Apresentação Comercial 2026 (slides 18 e 19).",
+  "formato": "Carrossel",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   },
+   {
+    "acao": "Arte enviada (v1)",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Arte criada (5 lâminas + PDF para o LinkedIn). Enviada para revisão técnica."
+   },
+   {
+    "acao": "Movido para Revisão técnica",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   },
+   {
+    "acao": "Artes removidas",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "A pedido do Fábio, as artes geradas pelo Claude foram apagadas. O briefing continua no post."
+   },
+   {
+    "acao": "Movido para Pauta",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: 'O que fica no alimento depois da aplicação?' Foto de grãos, frutas ou hortaliças. Selo '16/10 · Dia Mundial da Alimentação'.",
+   "O estudo de resíduos mede quanto de um defensivo permanece no alimento. É uma das bases para definir limites seguros de uso.",
+   "Na SCI-AGRO, conduzimos a fase analítica: desenvolvimento e validação de método e análise das amostras.",
+   "Tecnologia: cromatografia líquida (LC/MSMS) e gasosa (CG/MS) para leituras sensíveis. Possibilidade de atuar como PP ou DE.",
+   "Fechamento: 'Precisão no laboratório, segurança no prato.' + CTA."
+  ],
+  "legenda": "Precisão no laboratório, segurança no prato. 🍽️\n\nNeste Dia Mundial da Alimentação, mostramos uma etapa que pouca gente vê: o estudo de resíduos de defensivos agrícolas.\n\nEle mede o que permanece no alimento depois da aplicação e ajuda a definir limites seguros de uso. Na SCI-AGRO, conduzimos a fase analítica com cromatografia líquida (LC/MSMS) e gasosa (CG/MS), com profissionais experientes em desenvolvimento e validação de métodos.\n\nArraste para entender. 👉\n\n#SCIAGRO #DiaMundialDaAlimentação #SegurançaAlimentar #ResíduosDePesticidas #Cromatografia #Agronegócio",
+  "legenda_li": "16 de outubro, Dia Mundial da Alimentação.\n\nUma etapa pouco visível da segurança alimentar acontece no laboratório: o estudo de resíduos de defensivos agrícolas, que mede o que permanece no alimento após a aplicação e apoia a definição de limites seguros de uso.\n\nNa SCI-AGRO, conduzimos a fase analítica desses estudos:\n• desenvolvimento e validação de métodos\n• cromatografia líquida (LC/MSMS) e gasosa (CG/MS)\n• possibilidade de atuação como Pesquisador Principal ou Diretor de Estudo\n\n#SCIAGRO #SegurançaAlimentar #ResíduosDePesticidas #Cromatografia #Agronegócio",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-10",
+  "objetivo": "Ligar a data ao estudo de resíduos e mostrar a capacidade analítica.",
+  "origem": "Novo",
+  "pilar": "Agro / Resíduos",
+  "quadro": "agro",
+  "roteiro": "",
+  "tema": "Dia Mundial da Alimentação: do laboratório ao prato",
+  "tipo": "Arte",
+  "validacao": "Resíduos de Pesticidas"
+ },
+ "2026-10-20": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "Validar com a gerência de Microbiologia se a lista de ensaios para biológicos segue atual.",
+  "correcaoDe": null,
+  "data": "2026-10-20",
+  "dia": "Ter",
+  "etapa": "pauta",
+  "fonte": "Folder BioSummit (seções Biológicos, Fitoquímicos e Toxicologia in vivo: patogenicidade).",
+  "formato": "Carrossel",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   },
+   {
+    "acao": "Arte enviada (v1)",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Arte criada (6 lâminas + PDF para o LinkedIn). Enviada para revisão técnica."
+   },
+   {
+    "acao": "Movido para Revisão técnica",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   },
+   {
+    "acao": "Artes removidas",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "A pedido do Fábio, as artes geradas pelo Claude foram apagadas. O briefing continua no post."
+   },
+   {
+    "acao": "Movido para Pauta",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: 'Biológico também precisa provar o que é.' Imagem de placa de Petri ou microscópio.",
+   "É o microrganismo certo? Identificação por qPCR.",
+   "Está na concentração declarada? Teor do ingrediente ativo, com controle de contaminantes e toxinas relevantes.",
+   "Continua eficiente até o fim da validade? Estudo de estabilidade.",
+   "É seguro? Testes de toxicidade e patogenicidade por via oral, pulmonar e intravenosa.",
+   "Fitoquímicos: desenvolvimento de método para marcadores químicos. CTA: sales@sci-agro.com."
+  ],
+  "legenda": "Biológico também precisa provar o que é. 🧫\n\nO mercado de bioinsumos cresce rápido, e com ele a exigência por dados sólidos. Para um biopesticida chegar ao mercado, o laboratório responde a perguntas como:\n\n🔹 É o microrganismo certo? (identificação por qPCR)\n🔹 Está na concentração declarada e livre de contaminantes?\n🔹 Continua estável até o fim da validade?\n🔹 É seguro para quem aplica e para o ambiente?\n\nA SCI-AGRO apoia biológicos e fitoquímicos em cada uma dessas etapas. Arraste para ver. 👉\n\n#SCIAGRO #Bioinsumos #Biopesticidas #ControleBiológico #Microbiologia #qPCR #Agronegócio",
+  "legenda_li": "O mercado de bioinsumos cresce rápido, e a exigência por dados sólidos cresce junto.\n\nPara um biopesticida chegar ao mercado, algumas perguntas precisam de resposta de laboratório:\n• É o microrganismo declarado? Identificação por qPCR.\n• Está na concentração declarada e livre de contaminantes e toxinas relevantes?\n• Continua estável até o fim da validade?\n• É seguro? Testes de toxicidade e patogenicidade.\n\nA SCI-AGRO apoia empresas de biológicos e fitoquímicos em cada uma dessas etapas. Fale com o nosso time: sales@sci-agro.com\n\n#SCIAGRO #Bioinsumos #Biopesticidas #Microbiologia #ControleBiológico",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-10",
+  "objetivo": "Posicionar a SCI-AGRO para empresas de bioinsumos: o que o laboratório analisa num produto biológico.",
+  "origem": "Novo",
+  "pilar": "Biopesticidas",
+  "quadro": "bio",
+  "roteiro": "",
+  "tema": "Biológico também precisa provar o que é",
+  "tipo": "Arte",
+  "validacao": "Microbiologia"
+ },
+ "2026-10-21": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": true,
+  "artes": [],
+  "atencao": "Gravar só com liberação da Garantia da Qualidade (área de teste BPL). Não filmar etiquetas, códigos de estudo, telas ou nada que identifique patrocinador.",
+  "correcaoDe": null,
+  "data": "2026-10-21",
+  "dia": "Qua",
+  "etapa": "pauta",
+  "fonte": "Folder BioSummit (Ecotoxicologia: abelhas e larvas) e Apresentação Comercial (slide 8).",
+  "formato": "Reels 30-40s",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   },
+   {
+    "acao": "Arte enviada (v1)",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Capa do Reels criada. O post continua em produção até o vídeo ser gravado e enviado. Capa provisória do Reels (grafismo). Depois da gravação, dá para trocar o fundo por um frame do vídeo."
+   },
+   {
+    "acao": "Movido para Em produção",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   },
+   {
+    "acao": "Artes removidas",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "A pedido do Fábio, as artes geradas pelo Claude foram apagadas. O briefing continua no post."
+   },
+   {
+    "acao": "Movido para Pauta",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   },
+   {
+    "acao": "Data alterada",
+    "at": "2026-09-25T18:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "De 14/10 para 21/10. A semana de 12 a 16/10 tinha 4 posts e feriado; também dá mais tempo para a liberação da GQ filmar. (revisão do cronograma aprovada pelo Fábio em 25/09)."
+   }
+  ],
+  "hora": "18h",
+  "hora_li": "8h30",
+  "laminas": [],
+  "legenda": "Sim, tem abelha no laboratório. 🐝\n\nNos estudos de ecotoxicologia, avaliamos o efeito de um produto sobre abelhas e larvas, por via oral e por contato, em testes agudos e crônicos.\n\nPara o resultado ser confiável, o cuidado começa antes do ensaio: condicionamento das espécies conforme cada guia de teste e controle das condições climáticas.\n\nÉ assim que a ciência ajuda a proteger a lavoura sem esquecer de quem poliniza. 💛\n\n#SCIAGRO #Ecotoxicologia #Abelhas #Polinizadores #BPL #Agronegócio #Bastidores",
+  "legenda_li": "Estudos de ecotoxicologia com abelhas exigem cuidado antes mesmo do ensaio começar.\n\nNa SCI-AGRO, avaliamos efeitos de produtos sobre abelhas e larvas, por via oral e por contato, em testes agudos e crônicos. O condicionamento das espécies segue cada guia de teste, e as condições climáticas são controladas durante todo o estudo.\n\nÉ esse controle que dá sustentação técnica ao resultado entregue ao patrocinador.\n\nNo vídeo, um pouco da rotina do nosso laboratório de Ecotoxicologia.\n\n#SCIAGRO #Ecotoxicologia #Polinizadores #BPL #EstudosRegulatórios",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-10",
+  "objetivo": "Mostrar o cuidado com espécies sensíveis nos estudos ecotoxicológicos: conteúdo de alto apelo visual.",
+  "origem": "Novo",
+  "pilar": "Área do mês: Ecotoxicologia",
+  "quadro": "area",
+  "roteiro": "Gravação no celular, vertical 9:16, luz natural ou do laboratório. Sem fala; texto na tela + música instrumental leve.\n\nTAKE 1 (0-3s) Close em abelhas. Texto: 'Sim, tem abelha no laboratório.'\nTAKE 2 (3-10s) Mãos do técnico (luvas, jaleco) preparando o ensaio. Texto: 'Estudos de ecotoxicologia com abelhas e larvas'.\nTAKE 3 (10-18s) Painel ou sala climatizada, termo-higrômetro. Texto: 'Condições climáticas sob controle'.\nTAKE 4 (18-26s) Técnico observando e registrando. Texto: 'Efeitos por via oral e por contato, agudos e crônicos'.\nTAKE 5 (26-35s) Plano aberto do laboratório + wordmark. Texto: 'Proteger a lavoura sem esquecer quem poliniza.'\n\nCapa do Reels: frame do Take 1 com o título.",
+  "tema": "Sim, tem abelha no laboratório (bastidor)",
+  "tipo": "Vídeo",
+  "validacao": "Ecotoxicologia + Garantia da Qualidade"
+ },
+ "2026-10-22": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": {
+   "at": "2026-09-24T18:00:00Z",
+   "by": null,
+   "quem": "Documento de cronograma"
+  },
+  "area_mes": false,
+  "artes": [],
+  "atencao": "No documento aprovado a primeira linha tem um espaço antes do ponto (\"comprovação .\"). Corrigir na hora de publicar. O checklist do documento pede validar os termos esporicida/esterilizante e micobactericida com o time técnico.",
+  "correcaoDe": null,
+  "data": "2026-10-22",
+  "dia": "Qui",
+  "etapa": "producao",
+  "fonte": "Documento de cronograma (Arte 4 e Post 4), aprovado.",
+  "formato": "Arte estática",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Texto aprovado no documento de cronograma: pula a revisão técnica e vai direto para a aprovação final depois da arte."
+   },
+   {
+    "acao": "Legendas importadas do documento",
+    "at": "2026-09-24T19:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Texto literal do Post 4 do documento Cronograma Conteudos, usado no Instagram e no LinkedIn."
+   },
+   {
+    "acao": "Arte enviada (v1)",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Arte criada seguindo a direção aprovada no documento. Como o texto já estava aprovado, vai direto para a aprovação final."
+   },
+   {
+    "acao": "Movido para Aprovação final",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   },
+   {
+    "acao": "Artes removidas",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "A pedido do Fábio, as artes geradas pelo Claude foram apagadas. O briefing continua no post."
+   },
+   {
+    "acao": "Movido para Em produção",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Visual técnico e moderno, ícones de microrganismo, superfície e laudo. Listar: bactericida, fungicida, micobactericida, esporicida/esterilizante. CTA: 'Converse com nossa equipe técnica'. (Direção do documento aprovado: conferir lá antes de produzir.)"
+  ],
+  "legenda": "Desinfetante eficaz precisa de comprovação . 🧪\n\nNa SCI-AGRO, realizamos ensaios microbiológicos para avaliar a eficácia de produtos desinfetantes, apoiando empresas com dados confiáveis para estudos, validações e demandas regulatórias.\n\nNossos ensaios incluem avaliações como:\n✔️ Bactericida\n✔️ Fungicida\n✔️ Micobactericida\n✔️ Esporicida / Esterilizante\n\nConte com um laboratório especializado para garantir mais segurança, qualidade e confiabilidade ao seu produto.\n\n📩 Converse com nossa equipe técnica.\n\n#SCIAGRO #Desinfetantes #Microbiologia #EnsaiosMicrobiológicos #Validação #ControleDeQualidade #Regulatório #Laboratório #Saneantes #EficáciaComprovada",
+  "legenda_li": "Desinfetante eficaz precisa de comprovação . 🧪\n\nNa SCI-AGRO, realizamos ensaios microbiológicos para avaliar a eficácia de produtos desinfetantes, apoiando empresas com dados confiáveis para estudos, validações e demandas regulatórias.\n\nNossos ensaios incluem avaliações como:\n✔️ Bactericida\n✔️ Fungicida\n✔️ Micobactericida\n✔️ Esporicida / Esterilizante\n\nConte com um laboratório especializado para garantir mais segurança, qualidade e confiabilidade ao seu produto.\n\n📩 Converse com nossa equipe técnica.\n\n#SCIAGRO #Desinfetantes #Microbiologia #EnsaiosMicrobiológicos #Validação #ControleDeQualidade #Regulatório #Laboratório #Saneantes #EficáciaComprovada",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-10",
+  "objetivo": "Apresentar os ensaios microbiológicos de eficácia de desinfetantes.",
+  "origem": "Aprovado no documento",
+  "pilar": "Saneantes",
+  "quadro": "saneantes",
+  "roteiro": "",
+  "tema": "Desinfetante eficaz precisa de comprovação",
+  "tipo": "Arte",
+  "validacao": "Microbiologia"
+ },
+ "2026-10-27": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "Definir quem grava (gerente de Microbiologia?). Especialista revisa o texto antes: ajustar para o vocabulário dela. Autorização de imagem e liberação da Qualidade para filmar a área.",
+  "correcaoDe": null,
+  "data": "2026-10-27",
+  "dia": "Ter",
+  "etapa": "pauta",
+  "fonte": "Folder BioSummit (seção Biológicos).",
+  "formato": "Reels 45-60s",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   },
+   {
+    "acao": "Arte enviada (v1)",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Capa do Reels criada. O post continua em produção até o vídeo ser gravado e enviado. Capa provisória com foto da apresentação comercial. Trocar por um frame do especialista que gravar o vídeo (se for outra pessoa, não usar esta foto)."
+   },
+   {
+    "acao": "Movido para Em produção",
+    "at": "2026-09-24T21:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   },
+   {
+    "acao": "Artes removidas",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "A pedido do Fábio, as artes geradas pelo Claude foram apagadas. O briefing continua no post."
+   },
+   {
+    "acao": "Movido para Pauta",
+    "at": "2026-09-24T22:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": ""
+   }
+  ],
+  "hora": "18h",
+  "hora_li": "8h30",
+  "laminas": [],
+  "legenda": "O que o laboratório checa num bioinsumo? Nosso time de Microbiologia responde em menos de um minuto. 🎥\n\nIdentidade, concentração, pureza e estabilidade: quatro perguntas que todo biológico precisa responder antes de chegar ao campo.\n\nTem alguma dúvida sobre biológicos? Deixe nos comentários que a gente responde. 👇\n\n#SCIAGRO #Bioinsumos #Biopesticidas #Microbiologia #EspecialistaResponde #Agronegócio",
+  "legenda_li": "Um bioinsumo é um produto vivo. Como o laboratório garante que ele é o que diz ser e que continua funcionando até o fim da validade?\n\nNeste vídeo, nosso time de Microbiologia explica as quatro perguntas que todo biológico precisa responder: identidade, concentração, pureza e estabilidade.\n\nFicou alguma dúvida? Deixe nos comentários.\n\n#SCIAGRO #Bioinsumos #Microbiologia #Biopesticidas #EstudosRegulatórios",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-10",
+  "objetivo": "Dar rosto técnico à marca e aprofundar o tema do carrossel de 20/10.",
+  "origem": "Novo",
+  "pilar": "Biopesticidas / Especialista",
+  "quadro": "especialista",
+  "roteiro": "Formato: especialista de frente para a câmera, meio-corpo, jaleco, laboratório de Microbiologia ao fundo (desfocado). Celular na horizontal travada em tripé, gravar em 9:16. Microfone de lapela. Legendas na tela.\n\nABERTURA (0-5s): 'Um bioinsumo é um produto vivo. Então, como o laboratório garante que ele funciona e é seguro? São quatro perguntas.'\n1 (5-15s): 'É o microrganismo certo? A gente confirma a identidade por qPCR.' [inserir take de bancada]\n2 (15-25s): 'Está na concentração declarada? Medimos o teor do ativo.' [take de placa ou contagem]\n3 (25-35s): 'Está livre de contaminantes e toxinas que não deveriam estar ali?'\n4 (35-45s): 'Continua estável até o fim da validade? Isso é o estudo de estabilidade.'\nFECHAMENTO (45-55s): 'Dados confiáveis são o que levam um biológico do laboratório para o campo. Eu sou [nome], da SCI-AGRO.' + wordmark.\n\nGravar 2 ou 3 versões de cada fala; cortar no melhor take.",
+  "tema": "Especialista responde: o que o laboratório checa num bioinsumo?",
+  "tipo": "Vídeo",
+  "validacao": "Microbiologia + Garantia da Qualidade"
+ },
+ "2026-11-03": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "Revisar se a página de classificação da Anvisa teve atualização. Casa com o post de desinfetantes de 22/10: citar que desinfetante é risco 2.",
+  "correcaoDe": null,
+  "data": "2026-11-03",
+  "dia": "Ter",
+  "etapa": "pauta",
+  "fonte": "Anvisa, 'Classificação de saneantes' (gov.br/anvisa); folder BioSummit (lista de testes in vivo e in vitro).",
+  "formato": "Carrossel",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: 'Seu saneante é risco 1 ou risco 2?' Ícones de frasco de limpeza e desinfetante.",
+   "Risco 1 = notificação. Precisa cumprir tudo: DL50 oral acima de 2.000 mg/kg (líquidos) ou 500 mg/kg (sólidos); pH entre 2 e 11,5; sem corrosividade, sem ação antimicrobiana e sem ação desinfestante.",
+   "Risco 2 = registro. Basta um critério: toxicidade maior que os limites acima; pH até 2 ou a partir de 11,5; corrosivo; ação antimicrobiana (desinfetantes); ação desinfestante (inseticidas domésticos); ou à base de microrganismos viáveis.",
+   "Onde entra o laboratório: toxicidade oral aguda, irritação e corrosão da pele e dos olhos, sensibilização dérmica. Vários desses testes já têm versão in vitro (epiderme humana reconstruída, BCOP, EpiOcular).",
+   "CTA: 'Vai registrar ou reformular um saneante? Fale com a gente.' + sales@sci-agro.com. Rodapé: Fonte: Anvisa, classificação de saneantes."
+  ],
+  "legenda": "Seu saneante é risco 1 ou risco 2? 🧴\n\nNa Anvisa, essa resposta define o caminho do produto:\n\n📌 Risco 1: notificação. Vale para produtos de baixa toxicidade, pH entre 2 e 11,5 e sem ação corrosiva, antimicrobiana ou desinfestante.\n📌 Risco 2: registro. Basta um critério, como pH extremo, ação desinfetante ou toxicidade mais alta.\n\nEm ambos os casos, dados toxicológicos confiáveis fazem diferença no dossiê, e muitos testes de irritação já podem ser feitos in vitro, sem uso de animais.\n\nArraste para ver os critérios. 👉\n\n#SCIAGRO #Saneantes #Anvisa #RegistroDeProdutos #Toxicologia #InVitro #Domissanitários",
+  "legenda_li": "Seu saneante é risco 1 ou risco 2?\n\nNa Anvisa, essa classificação define o caminho regulatório do produto:\n\n• Risco 1 (notificação): baixa toxicidade, pH entre 2 e 11,5 e sem ação corrosiva, antimicrobiana ou desinfestante.\n• Risco 2 (registro): basta um critério, como pH extremo, ação desinfetante ou desinfestante, toxicidade mais alta ou base de microrganismos viáveis.\n\nNos dois casos, dados de eficácia e de segurança bem conduzidos reduzem retrabalho no dossiê. No carrossel, os critérios lado a lado.\n\n#SCIAGRO #Saneantes #Anvisa #AssuntosRegulatórios #Household",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-11",
+  "objetivo": "Educar fabricantes de saneantes sobre a classificação da Anvisa e mostrar onde os estudos toxicológicos entram no processo.",
+  "origem": "Novo",
+  "pilar": "Saneantes",
+  "quadro": "saneantes",
+  "roteiro": "",
+  "tema": "Seu saneante é risco 1 ou risco 2?",
+  "tipo": "Arte",
+  "validacao": "Área de eficácia (saneantes) + Comercial"
+ },
+ "2026-11-04": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "RH confirma se os valores (60%, R$ 1.000/mês, 10 bolsas) seguem válidos na data da publicação.",
+  "correcaoDe": null,
+  "data": "2026-11-04",
+  "dia": "Qua",
+  "etapa": "producao",
+  "fonte": "Projeto: claude/posts-cultivando-conhecimento.md (legendas da série).",
+  "formato": "Carrossel (5 lâminas)",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:30:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Série Cultivando Conhecimento 02 · Como funciona. Legenda do Instagram vem do material da série no projeto; se as artes já existem, é só subir e enviar para a revisão do RH."
+   },
+   {
+    "acao": "Legenda ajustada",
+    "at": "2026-09-25T17:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Incluída a menção ao Projeto AVANTE (programa que reúne os benefícios e o desenvolvimento dos colaboradores), a pedido do Fábio."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: 'Como funciona a bolsa de estudos da SCI-AGRO?'",
+   "60% da mensalidade do curso aprovado custeados pela empresa, com limite de R$ 1.000 por mês.",
+   "Até 10 bolsas de estudo ativas por ano.",
+   "Benefício durante toda a vigência do curso, com acompanhamento do desempenho acadêmico.",
+   "Fechamento: 'Um modelo pensado para crescer junto com as pessoas.'"
+  ],
+  "legenda": "Como funciona a bolsa de estudos do Projeto AVANTE? 🎓\n\n📌 60% da mensalidade do curso aprovado custeados pela empresa (limite de R$ 1.000/mês)\n📌 Até 10 bolsas de estudo ativas por ano\n📌 Benefício durante toda a vigência do curso, com acompanhamento do desempenho acadêmico\n\nUm modelo que equilibra o incentivo ao colaborador com a responsabilidade na gestão dos recursos, pensado para crescer junto com as pessoas.\n\n#SCIAGRO #ProjetoAVANTE #CultivandoConhecimento #BolsaDeEstudos #Benefícios #EmployerBranding #CarreiraNoAgro",
+  "legenda_li": "Como funciona o Cultivando Conhecimento, o programa de bolsas de estudo do Projeto AVANTE, da SCI-AGRO:\n\n• 60% da mensalidade do curso aprovado custeados pela empresa, com limite de R$ 1.000 por mês\n• até 10 bolsas ativas por ano\n• benefício durante toda a vigência do curso, com acompanhamento do desempenho acadêmico\n\nUm modelo que equilibra o incentivo ao colaborador com a responsabilidade na gestão dos recursos.\n\n#SCIAGRO #ProjetoAVANTE #CultivandoConhecimento #EmployerBranding #Benefícios",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-11",
+  "objetivo": "Explicar o benefício em números claros.",
+  "origem": "Série Cultivando Conhecimento",
+  "pilar": "Pessoas / Cultivando Conhecimento",
+  "quadro": "cultivando",
+  "roteiro": "",
+  "tema": "Cultivando Conhecimento 02: Como funciona a bolsa",
+  "tipo": "Arte",
+  "validacao": "RH"
+ },
+ "2026-11-05": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": true,
+  "artes": [],
+  "atencao": "Liberação da Garantia da Qualidade para filmar. Telas desfocadas, sem etiqueta de amostra ou código de estudo. Autorização de imagem de quem aparecer.",
+  "correcaoDe": null,
+  "data": "2026-11-05",
+  "dia": "Qui",
+  "etapa": "pauta",
+  "fonte": "Apresentação Comercial 2026 (slides 6 e 7).",
+  "formato": "Reels 30-45s",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   },
+   {
+    "acao": "Data alterada",
+    "at": "2026-09-25T18:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "De 12/11 para 05/11. Troca com 'O que torna uma análise confiável?': o vídeo abre a Área do Mês no começo de novembro. (revisão do cronograma aprovada pelo Fábio em 25/09)."
+   }
+  ],
+  "hora": "18h",
+  "hora_li": "8h30",
+  "laminas": [],
+  "legenda": "Por dentro da Físico-Química. ⚗️\n\nSão mais de 63 estudos em escopo para atender requerimentos do Brasil, da Europa e da América do Sul, de pH e densidade a explosividade, constante de Henry e temperatura de autoignição.\n\nEquipamentos modernos, avaliação crítica dos guias de teste para cada tipo de formulação e uma equipe que trabalha como uma única engrenagem técnica.\n\nEste é o episódio de novembro da série Área do Mês. Qual área você quer ver em seguida? 👇\n\n#SCIAGRO #ÁreaDoMês #FísicoQuímica #Laboratório #BPL #Bastidores",
+  "legenda_li": "Área do mês: Físico-Química.\n\nO laboratório físico-químico da SCI-AGRO tem mais de 63 estudos em escopo, pensados para requerimentos do Brasil, da Europa e da América do Sul. Entre eles, estudos menos comuns nos pacotes de registro, como explosividade, constante de Henry, incompatibilidade química e temperatura de autoignição.\n\nPor trás disso: avaliação crítica dos guias de teste para cada formulação e investimento contínuo em equipamentos.\n\nNo vídeo, um pouco da rotina do time.\n\n#SCIAGRO #FísicoQuímica #EstudosRegulatórios #BPL",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-11",
+  "objetivo": "Primeiro episódio assumido da série 'Área do mês': mostrar a rotina e a escala do laboratório físico-químico.",
+  "origem": "Novo",
+  "pilar": "Área do mês: Físico-Química",
+  "quadro": "area",
+  "roteiro": "Vertical 9:16, sem fala, texto na tela + música instrumental. Gravar com o gestor da área indicando o que pode aparecer.\n\nTAKE 1 (0-3s) Porta ou placa do laboratório, entrada em movimento. Texto: 'Por dentro da Físico-Química'.\nTAKE 2 (3-10s) Sequência rápida de 3 equipamentos (1s cada) + mãos operando. Texto: '63+ estudos em escopo'.\nTAKE 3 (10-18s) Leitura de pH ou densidade em close. Texto: 'Do pH à explosividade'.\nTAKE 4 (18-26s) Técnico analisando resultado (tela desfocada). Texto: 'Brasil, Europa e América do Sul'.\nTAKE 5 (26-35s) Time reunido no lab, plano aberto. Texto: 'Área do mês · novembro' + wordmark.",
+  "tema": "Por dentro da Físico-Química",
+  "tipo": "Vídeo",
+  "validacao": "Físico-Química + Garantia da Qualidade"
+ },
+ "2026-11-10": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "Não usar foto de animais. Ícones apenas.",
+  "correcaoDe": null,
+  "data": "2026-11-10",
+  "dia": "Ter",
+  "etapa": "pauta",
+  "fonte": "Apresentação Comercial 2026 (slides 10-17 e 20).",
+  "formato": "Carrossel",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: 'In vivo, in vitro, in silico. Qual a diferença?' Três ícones: organismo, placa de células, computador.",
+   "In vivo: estudo em organismo vivo. Biotério moderno, CEUA própria, registro no CONCEA e acreditação AAALAC.",
+   "In vitro: células e tecidos em laboratório. Ex.: teste de Ames, micronúcleo, pele e olho reconstruídos. Frente em expansão, alinhada ao CONCEA.",
+   "In silico: modelos de computador (QSAR). Usamos ao menos três softwares, cruzados com dados de literatura.",
+   "Mensagem: escolher o método certo reduz o uso de animais sem abrir mão da segurança. Pergunta: 'Qual termo você quer que a gente explique no próximo post?'"
+  ],
+  "legenda": "Hoje é Dia Mundial da Ciência. Que tal três palavras que aparecem muito por aqui? 🔬💻\n\n🐭 In vivo: estudo em organismo vivo, com aprovação ética da CEUA e registro no CONCEA.\n🧫 In vitro: células e tecidos em laboratório, como o teste de Ames e os modelos de pele reconstruída.\n💻 In silico: previsões por modelos de computador (QSAR), cruzando softwares e literatura.\n\nCombinar essas abordagens permite reduzir o número de estudos com animais sem abrir mão da segurança do resultado.\n\nSalve para consultar depois e conta aqui: qual termo a gente explica no próximo post? 👇\n\n#SCIAGRO #DiaMundialDaCiência #CiênciaSemJargão #InVitro #InSilico #QSAR #Toxicologia",
+  "legenda_li": "Dia Mundial da Ciência, 10 de novembro.\n\nTrês abordagens que usamos para avaliar a segurança de um produto, e que se complementam:\n\n• In vivo: estudos em organismo vivo, com biotério moderno, CEUA própria, registro no CONCEA e acreditação AAALAC.\n• In vitro: células e tecidos em laboratório (Ames, micronúcleo, epiderme reconstruída), frente em expansão alinhada ao reconhecimento de novos guias pelo CONCEA.\n• In silico: toxicologia preditiva (QSAR) com ao menos três softwares, cruzada com dados de literatura.\n\nEscolher o método certo para cada pergunta reduz o uso de animais sem abrir mão da segurança.\n\n#SCIAGRO #Toxicologia #InVitro #QSAR #MétodosAlternativos",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-11",
+  "objetivo": "Conteúdo educativo e salvável que explica as três abordagens e reforça o compromisso com menos uso de animais. Ganha gancho no Dia Mundial da Ciência (10/11).",
+  "origem": "Novo",
+  "pilar": "Ciência sem jargão",
+  "quadro": "ciencia",
+  "roteiro": "",
+  "tema": "In vivo, in vitro, in silico: qual a diferença?",
+  "tipo": "Arte",
+  "validacao": "Toxicologia in vitro + Toxicologia in vivo"
+ },
+ "2026-11-12": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "Legenda do documento, ainda sem aprovação: passa pelas duas etapas aqui.",
+  "correcaoDe": null,
+  "data": "2026-11-12",
+  "dia": "Qui",
+  "etapa": "pauta",
+  "fonte": "Documento de cronograma (Arte 2 e Post 2).",
+  "formato": "Carrossel",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   },
+   {
+    "acao": "Legendas importadas do documento",
+    "at": "2026-09-24T19:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Texto literal do Post 2 do documento Cronograma Conteudos, usado no Instagram e no LinkedIn."
+   },
+   {
+    "acao": "Data alterada",
+    "at": "2026-09-25T18:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "De 05/11 para 12/11. Troca com o vídeo da Físico-Química: 12/11 é o Dia Mundial da Qualidade. (revisão do cronograma aprovada pelo Fábio em 25/09)."
+   },
+   {
+    "acao": "Legenda ajustada",
+    "at": "2026-09-25T18:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Incluído o gancho do Dia Mundial da Qualidade (segunda quinta de novembro, 12/11/2026)."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: 'O que torna uma análise confiável?' + selo 'Dia Mundial da Qualidade · 12/11'.",
+   "Método adequado ao produto e ao guia de teste.",
+   "Equipamentos calibrados e qualificados.",
+   "Amostras recebidas, armazenadas e preparadas com controle.",
+   "Documentação completa e equipe qualificada.",
+   "Rastreabilidade: cada dado pode ser reconstruído. CTA: 'Salve este conteúdo'."
+  ],
+  "legenda": "Hoje é Dia Mundial da Qualidade. 🏅\n\nA qualidade de um resultado não depende de uma única etapa. Ela é construída ao longo de todo o processo, com método adequado, equipamentos calibrados, amostras bem conduzidas, documentação completa, equipe técnica qualificada e rastreabilidade.\n\nNa SCI-AGRO, cada detalhe é tratado com responsabilidade para garantir dados consistentes, seguros e capazes de apoiar decisões importantes.\n\nSalve este conteúdo para consultar sempre que precisar. 🔬\n\n#SCIAgro #DiaMundialDaQualidade #AnálisesLaboratoriais #Qualidade #Rastreabilidade #Ciência #Laboratório #DadosConfiáveis",
+  "legenda_li": "Dia Mundial da Qualidade, 12 de novembro.\n\nA qualidade de um resultado não depende de uma única etapa. Ela é construída ao longo de todo o processo, com método adequado, equipamentos calibrados, amostras bem conduzidas, documentação completa, equipe técnica qualificada e rastreabilidade.\n\nNa SCI-AGRO, cada detalhe é tratado com responsabilidade para garantir dados consistentes, seguros e capazes de apoiar decisões importantes.\n\nSalve este conteúdo para consultar sempre que precisar. 🔬\n\n#SCIAgro #DiaMundialDaQualidade #AnálisesLaboratoriais #Qualidade #Rastreabilidade #Ciência #Laboratório #DadosConfiáveis",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-11",
+  "objetivo": "Mostrar que a confiabilidade é construída em cada etapa, não só no resultado final.",
+  "origem": "Do documento",
+  "pilar": "Autoridade técnica",
+  "quadro": "ciencia",
+  "roteiro": "",
+  "tema": "O que torna uma análise confiável?",
+  "tipo": "Arte",
+  "validacao": "Garantia da Qualidade"
+ },
+ "2026-11-17": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": true,
+  "artes": [],
+  "atencao": "Coletar a aspa com o gestor até 10/11. Autorização de imagem de todos na foto.",
+  "correcaoDe": null,
+  "data": "2026-11-17",
+  "dia": "Ter",
+  "etapa": "pauta",
+  "fonte": "Série Área do mês.",
+  "formato": "Post único",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Foto do time da Físico-Química no laboratório (jaleco, EPI). Título: 'Quem faz a Físico-Química'. Aspas curtas do gestor da área (até 20 palavras) com nome e cargo. Selo 'Área do mês · novembro'."
+  ],
+  "legenda": "Quem faz a Físico-Química. 💙💚\n\nPor trás de cada estudo existe um time que cuida do método, da calibração, da amostra e do registro de cada dado.\n\n\"[ASPAS DO GESTOR DA ÁREA]\"\n[Nome], [cargo]\n\nObrigado, time! Este é o encerramento da Área do Mês de novembro.\n\n#SCIAGRO #ÁreaDoMês #PessoasQueFazem #FísicoQuímica #CarreiraNoAgro",
+  "legenda_li": "Quem faz a Físico-Química da SCI-AGRO.\n\n\"[ASPAS DO GESTOR DA ÁREA]\"\n[Nome], [cargo]\n\nMétodo, calibração, preparo de amostras e registro de cada dado: é esse cuidado diário que dá sustentação aos estudos entregues aos nossos patrocinadores. Nosso reconhecimento ao time.\n\n#SCIAGRO #PessoasQueFazem #FísicoQuímica #Laboratório",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-11",
+  "objetivo": "Dar rosto ao time da área do mês e fortalecer a marca empregadora.",
+  "origem": "Novo",
+  "pilar": "Pessoas · Área do mês",
+  "quadro": "area",
+  "roteiro": "",
+  "tema": "Quem faz a Físico-Química",
+  "tipo": "Arte",
+  "validacao": "Físico-Química + RH"
+ },
+ "2026-11-19": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "",
+  "correcaoDe": null,
+  "data": "2026-11-19",
+  "dia": "Qui",
+  "etapa": "pauta",
+  "fonte": "Folder BioSummit (5-batch e 1-batch) e Apresentação Comercial 2026 (slide 5).",
+  "formato": "Carrossel",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: '5-batch: por que cinco lotes?'",
+   "O que é: cinco ou mais lotes de produção são analisados conforme os guias de teste.",
+   "Para quê: combinados, os resultados mostram o perfil qualitativo e quantitativo do produto, incluindo impurezas.",
+   "Diferencial: isolamento e certificação dos padrões de impurezas, com identificação inequívoca. Vantagem para fitoquímicos.",
+   "Para onde: SENAVE, SENASA, COFEPRIS, União Europeia, EPA, entre outros. CTA."
+  ],
+  "legenda": "5-batch: por que cinco lotes? 🧪\n\nPara registrar um produto técnico, não basta analisar uma amostra. No estudo de 5-batch, cinco ou mais lotes de produção são analisados, e os resultados combinados mostram o perfil qualitativo e quantitativo do produto, incluindo as impurezas.\n\nNa SCI-AGRO, isolamos e certificamos os padrões de impurezas com identificação inequívoca, e atendemos exigências de órgãos como SENAVE, SENASA, COFEPRIS, União Europeia e EPA.\n\nArraste para entender. 👉\n\n#SCIAGRO #5Batch #ProdutoTécnico #Agroquímicos #AssuntosRegulatórios #Agronegócio",
+  "legenda_li": "Por que o estudo de 5-batch analisa cinco lotes?\n\nPorque o perfil de um produto técnico precisa representar a produção, não uma amostra isolada. Conforme os guias de teste, cinco ou mais lotes são analisados, e os resultados combinados mostram o perfil qualitativo e quantitativo do produto, impurezas incluídas.\n\nNa SCI-AGRO:\n• isolamento e certificação dos padrões de impurezas, com identificação inequívoca\n• vantagem para produtos fitoquímicos\n• atendimento a SENAVE, SENASA, COFEPRIS, UE e EPA, entre outros\n\n#SCIAGRO #5Batch #AssuntosRegulatórios #Agroquímicos",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-11",
+  "objetivo": "Explicar um serviço central para produtos técnicos e fitoquímicos em linguagem simples.",
+  "origem": "Novo",
+  "pilar": "Agro / 5-batch",
+  "quadro": "agro",
+  "roteiro": "",
+  "tema": "5-batch: por que cinco lotes?",
+  "tipo": "Arte",
+  "validacao": "Gestor do 5-batch / Padrões Analíticos"
+ },
+ "2026-11-24": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "Definir o especialista. Ele revisa as falas antes de gravar.",
+  "correcaoDe": null,
+  "data": "2026-11-24",
+  "dia": "Ter",
+  "etapa": "pauta",
+  "fonte": "Documento de cronograma (Vídeo 2 e modelo de legenda 'Eficácia').",
+  "formato": "Reels 45-60s",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   }
+  ],
+  "hora": "18h",
+  "hora_li": "8h30",
+  "laminas": [],
+  "legenda": "Como funciona um estudo de eficácia? 🎥\n\nNão basta dizer que funciona, é preciso comprovar. Nosso especialista explica o que entra no desenho de um estudo: o alvo, a condição de uso, a concentração, o tempo de contato e a metodologia.\n\nTem um produto saneante em desenvolvimento? Fale com a gente. 👇\n\n#SCIAGRO #Saneantes #EstudosDeEficácia #Desinfetantes #Inseticidas #Household",
+  "legenda_li": "Como funciona um estudo de eficácia de saneantes?\n\nCinco pontos definem o desenho do estudo: o alvo (qual microrganismo ou praga), a condição de uso, a concentração, o tempo de contato e a metodologia de referência. Quando esses pontos conversam com o que vai no rótulo, o claim tem sustentação técnica.\n\nNo vídeo, nosso especialista explica em menos de um minuto.\n\n#SCIAGRO #Saneantes #EstudosDeEficácia #AssuntosRegulatórios",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-11",
+  "objetivo": "Fechar o ciclo dos posts de inseticida e desinfetante com um especialista explicando o estudo.",
+  "origem": "Do documento",
+  "pilar": "Saneantes / Especialista",
+  "quadro": "especialista",
+  "roteiro": "Especialista de frente para a câmera, meio-corpo, laboratório ao fundo desfocado. Tripé, 9:16, lapela, legendas na tela.\n\nABERTURA (0-5s): 'Não basta dizer que um produto funciona. Tem que comprovar. E um estudo de eficácia começa com cinco perguntas.'\n1 (5-13s): 'Qual é o alvo? Uma bactéria, um fungo, um mosquito, uma barata.'\n2 (13-21s): 'Qual é a condição de uso? Superfície, ambiente, forma de aplicação.'\n3 (21-29s): 'Qual concentração? Diluído ou pronto para uso, exatamente como vai no rótulo.'\n4 (29-37s): 'Qual o tempo de contato? Quanto tempo o produto precisa agir.'\n5 (37-45s): 'E qual metodologia de referência vamos seguir.'\nFECHAMENTO (45-55s): 'Quando tudo isso conversa com o rótulo, o claim tem sustentação. Eu sou [nome], da SCI-AGRO.'",
+  "tema": "Como funciona um estudo de eficácia?",
+  "tipo": "Vídeo",
+  "validacao": "Área de eficácia (saneantes) + Garantia da Qualidade"
+ },
+ "2026-11-25": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "",
+  "correcaoDe": null,
+  "data": "2026-11-25",
+  "dia": "Qua",
+  "etapa": "producao",
+  "fonte": "Projeto: claude/posts-cultivando-conhecimento.md (legendas da série).",
+  "formato": "Carrossel (5 lâminas)",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:30:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Série Cultivando Conhecimento 03 · Quem pode participar. Legenda do Instagram vem do material da série no projeto; se as artes já existem, é só subir e enviar para a revisão do RH."
+   },
+   {
+    "acao": "Legenda ajustada",
+    "at": "2026-09-25T17:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Incluída a hashtag #ProjetoAVANTE, já que o Cultivando Conhecimento faz parte do Projeto AVANTE (pedido do Fábio)."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: 'Estudar com propósito.'",
+   "1. Área correlata: curso ligado à área de atuação do colaborador.",
+   "2. Tempo de empresa: mínimo de 12 meses de casa.",
+   "3. Comprometimento e engajamento; 4. Relevância do curso para o setor e para a empresa.",
+   "Fechamento: seleção por equipe designada, com critérios definidos e transparência. 'Cada pessoa que cresce fortalece o time todo.'"
+  ],
+  "legenda": "Estudar com propósito. 📚\n\nNo Cultivando Conhecimento, o que se aprende em sala vira prática no dia a dia. Por isso, a seleção considera quatro critérios:\n\n1️⃣ Área correlata: curso ligado à área de atuação do colaborador\n2️⃣ Tempo de empresa: mínimo de 12 meses de casa\n3️⃣ Comprometimento e engajamento: desempenho, postura e envolvimento\n4️⃣ Relevância do curso: contribuição efetiva para o setor e para a empresa\n\nA avaliação é feita por uma equipe de seleção designada, com critérios definidos previamente, com transparência e imparcialidade.\n\nCada pessoa que cresce fortalece o time todo. 💙💚\n\n#SCIAGRO #ProjetoAVANTE #CultivandoConhecimento #BolsaDeEstudos #DesenvolvimentoDeCarreira #Capacitação #Agronegócio",
+  "legenda_li": "Quem pode participar do Cultivando Conhecimento?\n\nA seleção das bolsas considera quatro critérios:\n1. Área correlata: curso ligado à área de atuação\n2. Tempo de empresa: mínimo de 12 meses\n3. Comprometimento e engajamento\n4. Relevância do curso para o setor e para a empresa\n\nA avaliação é feita por uma equipe de seleção designada, com critérios definidos previamente, transparência e imparcialidade. Porque o que se aprende em sala precisa virar prática no dia a dia.\n\n#SCIAGRO #ProjetoAVANTE #CultivandoConhecimento #DesenvolvimentoDeCarreira #GestãoDePessoas",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-11",
+  "objetivo": "Mostrar os critérios de seleção com transparência.",
+  "origem": "Série Cultivando Conhecimento",
+  "pilar": "Pessoas / Cultivando Conhecimento",
+  "quadro": "cultivando",
+  "roteiro": "",
+  "tema": "Cultivando Conhecimento 03: Quem pode participar",
+  "tipo": "Arte",
+  "validacao": "RH"
+ },
+ "2026-11-26": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "",
+  "correcaoDe": null,
+  "data": "2026-11-26",
+  "dia": "Qui",
+  "etapa": "pauta",
+  "fonte": "Apresentação Comercial 2026 (slides 10, 11 e 15).",
+  "formato": "Carrossel",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   },
+   {
+    "acao": "Data alterada",
+    "at": "2026-09-25T18:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "De 08/12 para 26/11. Ocupa o lugar do post do solo, que foi para 04/12 (Dia Mundial do Solo). (revisão do cronograma aprovada pelo Fábio em 25/09)."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: 'O que uma bactéria pode revelar sobre a segurança de um produto?'",
+   "Teste de Ames (OECD 471): mutação reversa bacteriana, com cepas de Salmonella.",
+   "A lógica: se o produto provoca mutações nas bactérias, é um alerta de potencial mutagênico.",
+   "Faz parte de uma bateria de testes de genotoxicidade: OECD 471, 474, 487, 476/490.",
+   "Laboratório de Microbiologia e Genotoxicidade da SCI-AGRO. CTA."
+  ],
+  "legenda": "O que uma bactéria pode revelar sobre a segurança de um produto? 🦠\n\nNo Teste de Ames (OECD 471), bactérias Salmonella são expostas ao produto. Se ele provoca mutações nelas, é um alerta de potencial mutagênico, e o produto segue para uma avaliação mais aprofundada.\n\nÉ um dos testes da bateria de genotoxicidade que conduzimos na SCI-AGRO, ao lado dos estudos de micronúcleo e de mutação gênica em células de mamíferos.\n\nSalve para lembrar. 📌\n\n#SCIAGRO #CiênciaSemJargão #TesteDeAmes #Genotoxicidade #OECD #Toxicologia",
+  "legenda_li": "O Teste de Ames (OECD 471) usa bactérias para avaliar se um produto tem potencial mutagênico: se ele induz mutações nas cepas de Salmonella, acende um alerta.\n\nNa SCI-AGRO, ele faz parte da bateria de genotoxicidade:\n• OECD 471: mutação reversa bacteriana (Ames)\n• OECD 474: micronúcleo em eritrócitos de mamíferos in vivo\n• OECD 487: micronúcleo em células de mamíferos in vitro\n• OECD 476/490: mutação gênica em células de mamíferos in vitro\n\n#SCIAGRO #Genotoxicidade #OECD #Toxicologia",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-11",
+  "objetivo": "Explicar um teste clássico de genotoxicidade de forma curiosa e salvável.",
+  "origem": "Novo",
+  "pilar": "Ciência sem jargão / Genotoxicidade",
+  "quadro": "ciencia",
+  "roteiro": "",
+  "tema": "Teste de Ames: o que uma bactéria revela",
+  "tipo": "Arte",
+  "validacao": "Genotoxicidade + Microbiologia"
+ },
+ "2026-12-01": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "A Microbiologia valida as definições antes da arte.",
+  "correcaoDe": null,
+  "data": "2026-12-01",
+  "dia": "Ter",
+  "etapa": "pauta",
+  "fonte": "Documento de cronograma (banco de temas) e escopo de desinfetantes do Post 4.",
+  "formato": "Carrossel",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: 'Limpeza, desinfecção e esterilização não são a mesma coisa.'",
+   "Limpeza: remove sujidade e reduz a carga de microrganismos.",
+   "Desinfecção: elimina microrganismos em superfícies conforme a alegação do produto (bactericida, fungicida, micobactericida).",
+   "Esterilização: elimina todas as formas microbianas, inclusive esporos (esporicida/esterilizante).",
+   "Cada alegação precisa de um ensaio de eficácia correspondente. CTA."
+  ],
+  "legenda": "Limpeza, desinfecção e esterilização não são a mesma coisa. 🧴\n\n🧽 Limpeza: remove a sujeira e reduz microrganismos.\n🧪 Desinfecção: elimina microrganismos em superfícies, conforme o que o produto declara (bactericida, fungicida, micobactericida).\n🔬 Esterilização: elimina todas as formas microbianas, inclusive esporos.\n\nCada alegação no rótulo precisa de um ensaio de eficácia que a sustente. Arraste para entender. 👉\n\n#SCIAGRO #Saneantes #Household #Desinfetantes #Microbiologia #EstudosDeEficácia",
+  "legenda_li": "Limpeza, desinfecção e esterilização aparecem juntas em muitos rótulos, mas não são sinônimos:\n\n• Limpeza remove sujidade e reduz a carga microbiana.\n• Desinfecção elimina microrganismos em superfícies, nos limites da alegação (bactericida, fungicida, micobactericida).\n• Esterilização elimina todas as formas microbianas, inclusive esporos.\n\nCada alegação precisa de um ensaio de eficácia correspondente. Na SCI-AGRO, conduzimos ensaios microbiológicos para desinfetantes, incluindo ação bactericida, fungicida, micobactericida e esporicida.\n\n#SCIAGRO #Saneantes #Household #EstudosDeEficácia",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-12",
+  "objetivo": "Conteúdo educativo técnico-comercial para fabricantes de household; reforça os ensaios de eficácia.",
+  "origem": "Novo",
+  "pilar": "Saneantes / Household",
+  "quadro": "saneantes",
+  "roteiro": "",
+  "tema": "Limpeza, desinfecção e esterilização não são a mesma coisa",
+  "tipo": "Arte",
+  "validacao": "Microbiologia"
+ },
+ "2026-12-03": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": true,
+  "artes": [],
+  "atencao": "A GQ revisa as quatro falas com a definição que ela usa internamente. Não filmar arquivo com pastas identificáveis.",
+  "correcaoDe": null,
+  "data": "2026-12-03",
+  "dia": "Qui",
+  "etapa": "pauta",
+  "fonte": "Apresentação Comercial 2026 (BPL desde março/2019).",
+  "formato": "Reels 45-60s",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   }
+  ],
+  "hora": "18h",
+  "hora_li": "8h30",
+  "laminas": [],
+  "legenda": "O que é BPL na prática? 🎥\n\nA SCI-AGRO é certificada em Boas Práticas de Laboratório desde 2019. Mas o que isso muda no dia a dia? Quem responde é o time de Garantia da Qualidade, a Área do Mês de dezembro.\n\n#SCIAGRO #ÁreaDoMês #BPL #GarantiaDaQualidade #Qualidade #Laboratório",
+  "legenda_li": "BPL na prática.\n\nA SCI-AGRO é certificada em Boas Práticas de Laboratório (BPL) desde março de 2019. No vídeo, nossa Garantia da Qualidade explica o que isso significa para o patrocinador: estudos planejados, registrados, rastreáveis e inspecionados de forma independente.\n\n#SCIAGRO #BPL #GarantiaDaQualidade #EstudosRegulatórios",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-12",
+  "objetivo": "Episódio de dezembro da Área do mês: explicar BPL com quem cuida dela.",
+  "origem": "Novo",
+  "pilar": "Área do mês: Garantia da Qualidade",
+  "quadro": "area",
+  "roteiro": "Especialista da Garantia da Qualidade, meio-corpo, arquivo ou sala da GQ ao fundo. Tripé, 9:16, lapela, legendas na tela.\n\nABERTURA (0-5s): 'BPL quer dizer Boas Práticas de Laboratório. Na prática, são quatro compromissos.'\n1 (5-15s): 'Tudo é planejado antes: cada estudo tem um plano aprovado.'\n2 (15-25s): 'Tudo é registrado: quem fez, quando, com qual equipamento.'\n3 (25-35s): 'Tudo é rastreável e arquivado: o estudo pode ser reconstruído anos depois.'\n4 (35-45s): 'E a Garantia da Qualidade inspeciona tudo isso de forma independente.'\nFECHAMENTO (45-55s): 'Por isso o dado que sai daqui é confiável. Eu sou [nome], da Garantia da Qualidade da SCI-AGRO.'",
+  "tema": "BPL na prática, com a Garantia da Qualidade",
+  "tipo": "Vídeo",
+  "validacao": "Garantia da Qualidade"
+ },
+ "2026-12-04": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "",
+  "correcaoDe": null,
+  "data": "2026-12-04",
+  "dia": "Sex",
+  "etapa": "pauta",
+  "fonte": "Folder BioSummit (Ecotoxicologia).",
+  "formato": "Carrossel",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   },
+   {
+    "acao": "Data alterada",
+    "at": "2026-09-25T18:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "De 26/11 para 04/12. 05/12 é o Dia Mundial do Solo (FAO). (revisão do cronograma aprovada pelo Fábio em 25/09)."
+   },
+   {
+    "acao": "Legenda ajustada",
+    "at": "2026-09-25T18:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Incluído o gancho do Dia Mundial do Solo (5/12, FAO)."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: 'Quem mais vive no solo?' + selo 'Dia Mundial do Solo · 5/12'. Ilustração em corte de solo.",
+   "Minhocas: testes agudos e crônicos.",
+   "Microrganismos do solo: efeitos no ciclo do nitrogênio e no ciclo do carbono.",
+   "Biodegradabilidade em solos: o que acontece com o produto com o tempo.",
+   "Fechamento: 'Proteger a produtividade começa pelo solo.' CTA."
+  ],
+  "legenda": "Neste sábado, 5 de dezembro, é o Dia Mundial do Solo. 🌍\n\nQuem mais vive no solo? 🌱🪱\n\nQuando um produto chega ao campo, ele também encontra minhocas e microrganismos que mantêm o solo vivo e produtivo.\n\nNos estudos de ecotoxicologia terrestre, avaliamos:\n🔹 minhocas, em testes agudos e crônicos\n🔹 microrganismos do solo, nos ciclos do nitrogênio e do carbono\n🔹 a biodegradabilidade do produto no solo\n\nArraste para ver. 👉\n\n#SCIAGRO #DiaMundialDoSolo #Ecotoxicologia #SaúdeDoSolo #Agronegócio #Sustentabilidade",
+  "legenda_li": "5 de dezembro é o Dia Mundial do Solo.\n\nOs estudos de ecotoxicologia não olham só para abelhas e organismos aquáticos. O solo também é avaliado.\n\nNa SCI-AGRO, o escopo terrestre inclui:\n• minhocas, em testes agudos e crônicos\n• microrganismos do solo, com efeitos nos ciclos do nitrogênio e do carbono\n• biodegradabilidade em solos\n\nSão dados que ajudam a entender o efeito de um produto sobre quem mantém o solo produtivo.\n\n#SCIAGRO #DiaMundialDoSolo #Ecotoxicologia #SaúdeDoSolo #EstudosRegulatórios",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-12",
+  "objetivo": "Mostrar a ecotoxicologia terrestre: organismos do solo que também são avaliados.",
+  "origem": "Novo",
+  "pilar": "Agro / Ecotoxicologia",
+  "quadro": "agro",
+  "roteiro": "",
+  "tema": "Quem mais vive no solo?",
+  "tipo": "Arte",
+  "validacao": "Ecotoxicologia"
+ },
+ "2026-12-09": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "Encerra a série no mês de fim de ano: combina com a mensagem de boas festas de 17/12.",
+  "correcaoDe": null,
+  "data": "2026-12-09",
+  "dia": "Qua",
+  "etapa": "producao",
+  "fonte": "Projeto: claude/posts-cultivando-conhecimento.md (legendas da série).",
+  "formato": "Carrossel (5 lâminas)",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:30:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Série Cultivando Conhecimento 04 · Parceria de mão dupla. Legenda do Instagram vem do material da série no projeto; se as artes já existem, é só subir e enviar para a revisão do RH."
+   },
+   {
+    "acao": "Legenda ajustada",
+    "at": "2026-09-25T17:00:00Z",
+    "by": null,
+    "quem": "Claude",
+    "texto": "Incluída a hashtag #ProjetoAVANTE, já que o Cultivando Conhecimento faz parte do Projeto AVANTE (pedido do Fábio)."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Capa: 'Crescer junto é uma via de mão dupla.'",
+   "A SCI-AGRO assume: seleção criteriosa, acompanhamento contínuo dos bolsistas e avaliação periódica do impacto.",
+   "O bolsista assume: histórico escolar a cada semestre, bom desempenho e permanência no time após a formatura.",
+   "O resultado: profissionais mais preparados, engajados e capazes de transformar conhecimento em resultado.",
+   "Fechamento: 'Crescer juntos é o nosso melhor investimento.'"
+  ],
+  "legenda": "Crescer junto é uma via de mão dupla. 🤝\n\n🏢 A SCI-AGRO assume: seleção criteriosa, acompanhamento contínuo dos bolsistas e avaliação periódica do impacto do programa.\n\n🎓 O bolsista assume: apresentar o histórico escolar a cada semestre, manter um bom desempenho e seguir no time após a formatura, colocando o conhecimento em prática.\n\nO resultado? Profissionais mais preparados, engajados e capazes de transformar conhecimento em resultados concretos.\n\nCrescer juntos é o nosso melhor investimento.\n\n#SCIAGRO #ProjetoAVANTE #CultivandoConhecimento #BolsaDeEstudos #CulturaOrganizacional #GestãoDePessoas #Educação",
+  "legenda_li": "Crescer junto é uma via de mão dupla.\n\nNo Cultivando Conhecimento, a SCI-AGRO assume a seleção criteriosa, o acompanhamento contínuo dos bolsistas e a avaliação periódica do impacto do programa. O bolsista assume apresentar o histórico escolar a cada semestre, manter um bom desempenho e seguir no time após a formatura.\n\nO resultado: profissionais mais preparados, engajados e capazes de transformar conhecimento em resultados concretos. Crescer juntos é o nosso melhor investimento.\n\n#SCIAGRO #ProjetoAVANTE #CultivandoConhecimento #CulturaOrganizacional #GestãoDePessoas",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-12",
+  "objetivo": "Fechar a série mostrando os compromissos dos dois lados.",
+  "origem": "Série Cultivando Conhecimento",
+  "pilar": "Pessoas / Cultivando Conhecimento",
+  "quadro": "cultivando",
+  "roteiro": "",
+  "tema": "Cultivando Conhecimento 04: Parceria de mão dupla",
+  "tipo": "Arte",
+  "validacao": "RH"
+ },
+ "2026-12-10": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": true,
+  "artes": [],
+  "atencao": "Coletar a aspa até 03/12. Autorização de imagem.",
+  "correcaoDe": null,
+  "data": "2026-12-10",
+  "dia": "Qui",
+  "etapa": "pauta",
+  "fonte": "Série Área do mês.",
+  "formato": "Post único",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Foto do time da Garantia da Qualidade. Título: 'Quem garante a qualidade'. Aspas curtas da gestora ou gestor da GQ com nome e cargo. Selo 'Área do mês · dezembro'."
+  ],
+  "legenda": "Quem garante a qualidade. 💙💚\n\nA Garantia da Qualidade acompanha cada estudo de forma independente, para que todo dado entregue seja rastreável e confiável.\n\n\"[ASPAS DA GESTÃO DA GQ]\"\n[Nome], [cargo]\n\nObrigado, time! Encerramento da Área do Mês de dezembro.\n\n#SCIAGRO #ÁreaDoMês #PessoasQueFazem #GarantiaDaQualidade #BPL",
+  "legenda_li": "Quem garante a qualidade na SCI-AGRO.\n\n\"[ASPAS DA GESTÃO DA GQ]\"\n[Nome], [cargo]\n\nNosso reconhecimento ao time de Garantia da Qualidade, que acompanha cada estudo de forma independente.\n\n#SCIAGRO #GarantiaDaQualidade #BPL #PessoasQueFazem",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-12",
+  "objetivo": "Dar rosto ao time da Garantia da Qualidade.",
+  "origem": "Novo",
+  "pilar": "Pessoas · Área do mês",
+  "quadro": "area",
+  "roteiro": "",
+  "tema": "Quem garante a qualidade",
+  "tipo": "Arte",
+  "validacao": "Garantia da Qualidade + RH"
+ },
+ "2026-12-15": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "Levantar fotos de eventos e ações de 2026 até 01/12. Só usar imagens já liberadas.",
+  "correcaoDe": null,
+  "data": "2026-12-15",
+  "dia": "Ter",
+  "etapa": "pauta",
+  "fonte": "Material produzido no ano.",
+  "formato": "Reels 30-45s",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   }
+  ],
+  "hora": "18h",
+  "hora_li": "8h30",
+  "laminas": [],
+  "legenda": "2026 em alguns segundos. 🎬\n\nEstudos, pessoas, áreas abertas para vocês conhecerem e muita ciência aplicada para que novos produtos cheguem ao mercado com segurança.\n\nObrigado a cada patrocinador, parceiro e colaborador que fez parte desse ano.\n\n#SCIAGRO #Retrospectiva2026 #BPL #PessoasQueFazem #Agronegócio",
+  "legenda_li": "Nosso 2026 em menos de um minuto.\n\nObrigado aos patrocinadores, parceiros e ao time SCI-AGRO por mais um ano de ciência aplicada ao desenvolvimento seguro de novos produtos.\n\n#SCIAGRO #Retrospectiva2026 #EstudosRegulatórios",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-12",
+  "objetivo": "Fechar o ano reaproveitando o material do trimestre e mostrando as áreas.",
+  "origem": "Novo",
+  "pilar": "Institucional / Retrospectiva",
+  "quadro": "institucional",
+  "roteiro": "Montagem, sem gravação nova. 9:16, música instrumental animada, cortes no ritmo.\n\n0-4s Texto: '2026 na SCI-AGRO'.\n4-20s Melhores takes dos Reels do trimestre (abelhas, Físico-Química, especialistas), 1-2s cada.\n20-30s Fotos das artes 'Área do mês' e de eventos do ano (ex.: BioSummit em maio).\n30-38s Números: 'BPL desde 2019 · 130+ especialistas · 11.000+ m²'.\n38-45s 'Obrigado. Nos vemos em 2027.' + wordmark.",
+  "tema": "Retrospectiva 2026",
+  "tipo": "Vídeo",
+  "validacao": "Diretoria"
+ },
+ "2026-12-17": {
+  "agendado": "",
+  "aprovFinal": null,
+  "aprovTec": null,
+  "area_mes": false,
+  "artes": [],
+  "atencao": "Confirmar as datas do recesso com o RH.",
+  "correcaoDe": null,
+  "data": "2026-12-17",
+  "dia": "Qui",
+  "etapa": "pauta",
+  "fonte": "Data comemorativa.",
+  "formato": "Post único",
+  "historico": [
+   {
+    "acao": "Post criado",
+    "at": "2026-09-24T18:00:00Z",
+    "by": null,
+    "quem": "Claude (cronograma)",
+    "texto": "Pauta do cronograma out–dez."
+   }
+  ],
+  "hora": "12h",
+  "hora_li": "8h30",
+  "laminas": [
+   "Arte clean em navy com detalhe lime. Texto: 'Que 2027 seja de boas colheitas e boas descobertas.' Rodapé: 'Recesso de [data] a [data].'"
+  ],
+  "legenda": "Que 2027 seja de boas colheitas e boas descobertas. 🌱✨\n\nObrigado por confiar à SCI-AGRO o cuidado com os seus produtos em 2026. Desejamos a você e à sua equipe um Natal de paz e um novo ano cheio de conquistas.\n\n📅 Nosso recesso vai de [data] a [data].\n\n#SCIAGRO #BoasFestas #FelizNatal #FelizAnoNovo",
+  "legenda_li": "Obrigado a patrocinadores, parceiros e ao time SCI-AGRO por mais um ano juntos. Que 2027 seja de boas colheitas e boas descobertas.\n\nRecesso: de [data] a [data]. Em caso de urgência: sales@sci-agro.com.\n\n#SCIAGRO #BoasFestas",
+  "link_ig": "",
+  "link_li": "",
+  "mes": "2026-12",
+  "objetivo": "Mensagem de fim de ano e aviso de recesso.",
+  "origem": "Novo",
+  "pilar": "Institucional / Datas",
+  "quadro": "institucional",
+  "roteiro": "",
+  "tema": "Boas festas",
+  "tipo": "Arte",
+  "validacao": "Diretoria + RH"
+ }
+}
